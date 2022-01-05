@@ -1,0 +1,77 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.recent_post {
+/*    width: 380px;*/
+    height: 680px;
+ 
+}
+    .recent_post p {
+        margin-top:29px;
+        margin-bottom: 17px;
+        margin-left:39px
+    }
+    .recent_post h1 {
+        font-family: AthiliFont;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #4F693D;
+        margin-bottom: 30px;
+        margin-left:39px
+    }
+    .recent_post hr {
+        height: 10px;
+        width: 200px;
+        left: 0px;
+        top: 45px;
+        border-radius: 10px;
+        background: #B8E866;
+        margin-left: 39px
+    }
+.box {
+    display: flex;
+    align-items: center;
+    padding: 39px 39px 0;
+}
+
+    .box img {
+        height: 80px;
+        width: 100px;
+        vertical-align: middle;
+    }
+
+    .box span {
+        padding: 0 10px;
+        height: 80px;
+        width: 267px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #4F693D;
+        
+    }
+@font-face {
+    font-family: AthiliFont;
+    src: url(fonts/Athiti-Regular.ttf);
+}
+.box b {
+    font-family: AthiliFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #4F693D;
+}

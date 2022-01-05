@@ -67,20 +67,84 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\clow.jpg" />
-    <Content Include="Images\kemduongahado.png" />
-    <Content Include="Images\kemduongahadualeo.png" />
-    <Content Include="Images\kemduongpivoine.png" />
-    <Content Include="Images\nuoccanbangshiseido.png" />
-    <Content Include="Images\plantscription.png" />
-    <Content Include="loan.html" />
-    <Content Include="main.css" />
+    <Content Include="Images\TrangChiTietSP\cart.png" />
+    <Content Include="TrangBlog.html" />
+    <Content Include="CSS\StyleThanhToanATM.css" />
+    <Content Include="TrangThanhToanATM.html" />
+    <Content Include="CSS\StyleBlog.css" />
+    <Content Include="TrangChiTietSanPham.html" />
+    <Content Include="CSS\StyleChiTietSP.css" />
+    <Content Include="CSS\StyleThanhToan.css" />
+    <Content Include="CSS\StyleGioiThieu.css" />
+    <Content Include="CSS\StyleTrangChu.css" />
+    <Content Include="Images\bank\acbbank.png" />
+    <Content Include="Images\bank\agribank.png" />
+    <Content Include="Images\bank\bidvbank.png" />
+    <Content Include="Images\bank\cbbank.png" />
+    <Content Include="Images\bank\citibank.png" />
+    <Content Include="Images\bank\dongabank.png" />
+    <Content Include="Images\bank\hdbank.png" />
+    <Content Include="Images\bank\hscbbank.png" />
+    <Content Include="Images\bank\mbbank.png" />
+    <Content Include="Images\bank\ncbbank.png" />
+    <Content Include="Images\bank\ocbbank.png" />
+    <Content Include="Images\bank\oceanbank.png" />
+    <Content Include="Images\bank\pgbank.png" />
+    <Content Include="Images\bank\scbbank.png" />
+    <Content Include="Images\bank\shbbank.png" />
+    <Content Include="Images\bank\tpbank.png" />
+    <Content Include="Images\bank\vietcombank.png" />
+    <Content Include="Images\bank\viettinbank.png" />
+    <Content Include="Images\bank\vpbank.png" />
+    <Content Include="Images\blog\chè dưỡng nhan.png" />
+    <Content Include="Images\TrangChiTietSP\hình lớn.png" />
+    <Content Include="Images\Trang Chủ\Evolve Organic Beauty Serum.jpg" />
+    <Content Include="Images\Trang Chủ\Evolve Organic Beauty.png" />
+    <Content Include="Images\Trang Chủ\evolve.jpg" />
+    <Content Include="Images\Trang Chủ\Nước hoa hồng.png" />
+    <Content Include="Images\Trang Chủ\organic serum.jpg" />
+    <Content Include="Images\Trang Chủ\Serum dưỡng da.jpg" />
+    <Content Include="Images\Trang Chủ\Son dưỡng  Yves Rocher Framboise.jpg" />
+    <Content Include="Images\Trang Chủ\Son dưỡng  Yves Rocher Karite.jpg" />
+    <Content Include="Images\Trang Chủ\Son dưỡng  Yves Rocher Vanille.jpg" />
+    <Content Include="Images\Trang Chủ\Son dưỡng Yves Rocher Cerise.jpg" />
+    <Content Include="Images\Trang Chủ\Son dưỡng.png" />
+    <Content Include="Images\Trang Chủ\ảnh banner 1.png" />
+    <Content Include="Images\TrangGioiThieu\Minh Thuý.png" />
+    <Content Include="Images\TrangGioiThieu\Minh Thư.png" />
+    <Content Include="Images\TrangGioiThieu\mục tiêu.png" />
+    <Content Include="Images\TrangGioiThieu\nguyên liệu.png" />
+    <Content Include="Images\TrangGioiThieu\Ngọc Anh.png" />
+    <Content Include="Images\TrangGioiThieu\Nhật Loan.png" />
+    <Content Include="Images\TrangGioiThieu\sứ mệnh.png" />
+    <Content Include="Images\TrangSP\kemduongahado.png" />
+    <Content Include="Images\TrangSP\kemduongahadualeo.png" />
+    <Content Include="Images\TrangSP\kemduongpivoine.png" />
+    <Content Include="Images\blog\làn da tươi sáng.png" />
+    <Content Include="Images\TrangChiTietSP\minus.png" />
+    <Content Include="Images\blog\mặt nạ hoa hồng.png" />
+    <Content Include="Images\TrangSP\nuoccanbangshiseido.png" />
+    <Content Include="Images\Trang Chủ\plantscription.png" />
+    <Content Include="Images\TrangChiTietSP\plus.png" />
+    <Content Include="Images\TrangChiTietSP\hình nhỏ 1.png" />
+    <Content Include="Images\TrangChiTietSP\hình nhỏ 2.png" />
+    <Content Include="Images\TrangChiTietSP\hình nhỏ 3.png" />
+    <Content Include="Images\blog\tinh dầu.png" />
+    <Content Include="Images\TrangChiTietSP\check.png" />
+    <Content Include="Images\blog\vitaminC.png" />
+    <Content Include="Images\blog\đá tro núi lửa.png" />
+    <Content Include="TrangChu.html" />
+    <Content Include="TrangSanPham.html" />
+    <Content Include="TrangGioiThieu.html" />
+    <Content Include="TrangThanhToan.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\Athiti-Regular.ttf" />
+    <Content Include="fonts\Helvetica Neue.otf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
