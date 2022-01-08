@@ -1,86 +1,165 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Blog</title>
     <link href="CSS/StyleBlog.css" rel="stylesheet" type="text/css" />
-   
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body> 
-    <div class="recent_post">
-        <p>TRANG CHỦ/ <b>BLOG</b></p>
-        <h1>Bài viết gần đây</h1>
-        <hr />
 
-        <div class="box">
-            <img src="Images/blog/làn da tươi sáng.png">
-            <span>
-                <br />
-                Ngày đăng 27/11/2021 <br />
-                <b>Mẹo nhỏ cho làn da tươi sáng</b> <br />
-                Thay vì phải đi spa với chi phí đắt <br />
-                đỏ hoặc mua các loại mỹ phẩm ...
-            </span>
+<body>
+    <div id="header" class="fixed"></div>
+
+    <div class="container" style="padding-top: 160px; padding-bottom: 30px">
+        <div class="row">
+            <div class="col-4  pl-12 pr-8">
+                <p>TRANG CHỦ/ <b>BLOG</b></p>
+                <h1 class="py-2 font-bold" style="font-size: 24px;">Bài viết nổi bật</h1>
+                <p class="w-32 p-1 bg-green-primary  rounded-md mt-2"></p>
+
+                <div class="flex items-center blog mt-4">
+                    <img src="Images/blog/làn da tươi sáng.png" />
+                    <p class="color-primary-bold">
+                        Ngày đăng 27/11/2021 <br />
+                        <b>Mẹo nhỏ cho làn da tươi sáng</b> <br />
+                        Thay vì phải đi spa với chi phí đắt <br />
+                        đỏ hoặc mua các loại mỹ phẩm ...
+                    </p>
+                </div>
+
+                <div class="flex items-center blog">
+                    <img src="Images/blog/tinh dầu.png" />
+                    <p class="color-primary-bold">
+                        Ngày đăng 29/11/2021 <br />
+                        <b>Phương pháp sản xuất tinh dầu</b> <br />
+                        Các phương pháp sản xuất tinh dầu <br />
+                        được hiểu là cách chiết tách tinh
+                    </p>
+                </div>
+
+                <div class="flex items-center blog">
+                    <img src="Images/blog/đá tro núi lửa.png" />
+                    <p class="color-primary-bold">
+                        Ngày đăng 30/11/2021 <br />
+                        <b>Công dụng của đá tro núi lửa</b> <br />
+                        TNhững năm gần đây, chỉ số ô <br />
+                        nhiễm, đặc biệt ở các thành phố
+                    </p>
+                </div>
+
+                <div class="flex items-center blog">
+                    <img src="Images/blog/vitaminC.png" />
+                    <p class="color-primary-bold">
+                        Ngày đăng 1/12/2021 <br />
+                        <b>Vitamin C tốt cho da của bạn</b> <br />
+                        Khả năng chống oxy hóa và là <br />
+                        thành phần trong quá trình tổng ...
+                    </p>
+                </div>
+
+                <div class="flex items-center blog">
+                    <img src="Images/blog/mặt nạ hoa hồng.png" />
+                    <p class="color-primary-bold">
+                        Ngày đăng 10/12/2021 <br />
+                        <b>Mặt nạ hoa hồng - cấp ẩm tức thì</b> <br />
+                        Mỗi ngày làn da của chúng ta đều <br />
+                        phải đối diện với rất nhiều tác động ...
+                    </p>
+                </div>
+
+                <div class="flex items-center blog">
+                    <img src="Images/blog/chè dưỡng nhan.png" />
+                    <p class="color-primary-bold">
+                        Ngày đăng 17/12/2021 <br />
+                        <b>Chè dưỡng nhan cho làn da đẹp</b> <br />
+                        Thời gian gần đây, chè dưỡng nhan <br />
+                        nổi lên như một món ăn được ...
+                    </p>
+                </div>
+            </div>
+            <div class="col-8 ">
+                <h1 class="pb-2 pt-8 font-bold" style="font-size: 24px;">Bài viết gần đây</h1>
+                <p class="w-32 p-1 bg-green-primary  rounded-md mt-2"></p>
+                <div class="row pt-8">
+                    <div class="col-6">
+                        <div class="blog-new transform-col">
+                            <img class="rounded-md" src="Images/blog/làn da tươi sáng.png" />
+                            <div class="px-4 py-2">
+                                <p class="pt-2 pb-1 color-primary-bold">Ngày đăng: 27/11/2021</p>
+                                <h1 class="font-bold text-xl">Mẹo nhỏ cho làn da tươi sáng</h1>
+                                <p>
+                                    <a href="#" class="color-primary py-1 font-bold hover:underline no-underline">Xem thêm</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="blog-new transform-col">
+                            <img class="rounded-md" src="Images/blog/làn da tươi sáng.png" />
+                            <div class="px-4 py-2">
+                                <p class="pt-2 pb-1 color-primary-bold">Ngày đăng: 27/11/2021</p>
+                                <h1 class="font-bold text-xl">Mẹo nhỏ cho làn da tươi sáng</h1>
+                                <p>
+                                    <a href="#" class="color-primary py-1 font-bold hover:underline no-underline">Xem thêm</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="blog-new transform-col">
+                            <img class="rounded-md" src="Images/blog/làn da tươi sáng.png" />
+                            <div class="px-4 py-2">
+                                <p class="pt-2 pb-1 color-primary-bold">Ngày đăng: 27/11/2021</p>
+                                <h1 class="font-bold text-xl">Mẹo nhỏ cho làn da tươi sáng</h1>
+                                <p>
+                                    <a href="#" class="color-primary py-1 font-bold hover:underline no-underline">Xem thêm</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="blog-new transform-col">
+                            <img class="rounded-md" src="Images/blog/làn da tươi sáng.png" />
+                            <div class="px-4 py-2">
+                                <p class="pt-2 pb-1 color-primary-bold">Ngày đăng: 27/11/2021</p>
+                                <h1 class="font-bold text-xl">Mẹo nhỏ cho làn da tươi sáng</h1>
+                                <p>
+                                    <a href="#" class="color-primary py-1 font-bold hover:underline no-underline">Xem thêm</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog-new transform-col">
+                            <img class="rounded-md" src="Images/blog/làn da tươi sáng.png" />
+                            <div class="px-4 py-2">
+                                <p class="pt-2 pb-1 color-primary-bold">Ngày đăng: 27/11/2021</p>
+                                <h1 class="font-bold text-xl">Mẹo nhỏ cho làn da tươi sáng</h1>
+                                <p>
+                                    <a href="#" class="color-primary py-1 font-bold hover:underline no-underline">Xem thêm</a>>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog-new transform-col">
+                            <img class="rounded-md" src="Images/blog/làn da tươi sáng.png" />
+                            <div class="px-4 py-2">
+                                <p class="pt-2 pb-1 color-primary-bold">Ngày đăng: 27/11/2021</p>
+                                <h1 class="font-bold text-xl">Mẹo nhỏ cho làn da tươi sáng</h1>
+                                <p>
+                                    <a href="#" class="color-primary py-1 font-bold hover:underline no-underline">Xem thêm</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="box">
-            <img src="Images/blog/tinh dầu.png">
-            <span>
-                <br />
-                Ngày đăng 29/11/2021 <br />
-                <b>Phương pháp sản xuất tinh dầu</b> <br />
-                Các phương pháp sản xuất tinh dầu <br />
-                được hiểu là cách chiết tách tinh
-            </span>
-        </div>
-
-
-        <div class="box">
-            <img src="Images/blog/đá tro núi lửa.png">
-            <span>
-                <br />
-                Ngày đăng 30/11/2021 <br />
-                <b>Công dụng của đá tro núi lửa</b> <br />
-                TNhững năm gần đây, chỉ số ô <br />
-                nhiễm, đặc biệt ở các thành phố
-            </span>
-        </div>
-
-
-        <div class="box">
-            <img src="Images/blog/vitaminC.png">
-            <span>
-                <br />
-                Ngày đăng 1/12/2021 <br />
-                <b>Vitamin C tốt cho da của bạn</b> <br />
-                Khả năng chống oxy hóa và là <br />
-                thành phần trong quá trình tổng ...
-            </span>
-        </div>
-
-        <div class="box">
-            <img src="Images/blog/mặt nạ hoa hồng.png">
-            <span>
-                <br />
-                Ngày đăng 10/12/2021 <br />
-                <b>Mặt nạ hoa hồng - cấp ẩm tức thì</b> <br />
-                Mỗi ngày làn da của chúng ta đều <br />
-                phải đối diện với rất nhiều tác động ...
-            </span>
-        </div>
-
-        <div class="box">
-            <img src="Images/blog/chè dưỡng nhan.png">
-            <span>
-                <br />
-                Ngày đăng 17/12/2021 <br />
-                <b>Chè dưỡng nhan cho làn da đẹp</b> <br />
-                Thời gian gần đây, chè dưỡng nhan <br />
-                nổi lên như một món ăn được ...
-            </span>
-        </div>
-
     </div>
-    
+
+    <div id="foot"></div>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

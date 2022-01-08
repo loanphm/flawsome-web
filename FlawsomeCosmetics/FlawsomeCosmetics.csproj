@@ -67,6 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\header.css" />
+    <Content Include="header.html" />
+    <Content Include="Images\svg\40\email.svg" />
+    <Content Include="Images\svg\40\faceBook.svg" />
+    <Content Include="Images\svg\40\instagram.svg" />
+    <Content Include="Images\svg\40\phone.svg" />
+    <Content Include="Images\svg\40\twitter.svg" />
+    <Content Include="Images\svg\40\vector.svg" />
+    <Content Include="Images\svg\40\youtube.svg" />
+    <Content Include="Images\svg\angle-down-solid.svg" />
+    <Content Include="Images\svg\gioHang.svg" />
+    <Content Include="Images\svg\like.svg" />
+    <Content Include="Images\svg\masterCard.svg" />
+    <Content Include="Images\svg\paypal.svg" />
+    <Content Include="Images\svg\serum.svg" />
+    <Content Include="Images\svg\share.svg" />
+    <Content Include="Images\svg\taiKhoan.svg" />
+    <Content Include="Images\svg\taiNghe.svg" />
+    <Content Include="Images\svg\timKiem.svg" />
+    <Content Include="Images\svg\transport.svg" />
+    <Content Include="Images\svg\visa.svg" />
     <Content Include="Images\TrangChiTietSP\cart.png" />
     <Content Include="TrangBlog.html" />
     <Content Include="CSS\StyleThanhToanATM.css" />
