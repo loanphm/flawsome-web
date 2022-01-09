@@ -4,51 +4,29 @@
     box-sizing: border-box;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
-
-    .col-2 img {
-        max-width: 100%;
-        padding: 50px 0;
-    }
-
 .offer {
-    background: #F0F7D4;
+    background: #f0f7d4;
     margin-top: 80px;
-    padding: 30px
+    padding: 30px;
 }
-
-.col-2 .offer-img {
-    padding: 50px;
-}
-
 
 h1 {
-    color: #4F693D;
+    color: #4f693d;
     font-size: 35px;
     font: normal;
-    font-weight: 600
+    font-weight: 600;
 }
 
 small {
     font-weight: 400;
     color: #000000;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .btn {
     display: inline-block;
-    background: #66B032;
-    color: #FFFFFF;
+    background: #66b032;
+    color: #ffffff;
     font-size: 16pt;
     border-radius: 40px;
     font-size: 28px;
@@ -57,11 +35,7 @@ small {
     text-align: center;
 }
 
-
 /*testimoinal*/
-.col-3 {
-    color: #000000
-}
 
 .testimonial {
     padding-top: 100px;
@@ -70,7 +44,7 @@ small {
     .testimonial .col-3-1 {
         text-align: center;
         padding: 40px 20px;
-        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
         cursor: pointer;
         transition: transform 0.5s;
     }
@@ -78,7 +52,7 @@ small {
         .testimonial .col-3-1 img {
             width: 50px;
             margin-top: 20px;
-            border-radius: 50%
+            border-radius: 50%;
         }
 
         .testimonial .col-3-1:hover {
@@ -86,13 +60,13 @@ small {
         }
 
 i {
-    color: #DFB300;
+    color: #dfb300;
     /*star*/
 }
 
 .fa.fa-quote-left {
     font-size: 34px;
-    color: #66B032;
+    color: #66b032;
 }
 
 p {
@@ -104,16 +78,9 @@ p {
 h3 {
     font-size: 24px;
     color: rgba(102, 176, 50, 1);
-    font-family:AthitiFont;
+    font-family: AthitiFont;
 }
-.col-3-1 h3 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0.02em;
-    color: rgba(0, 0, 0, 1);
-}
+
 .des small {
     color: rgba(196, 196, 196, 1);
     font-size: 16px;
@@ -128,22 +95,11 @@ h3 {
 .commit {
     margin: 100px auto;
 }
-/*.col-8 {
-    width: 300px;
-}
-.col-8 img{
-    width:50px;
-    height:50px;
-    cursor:pointer;
-    filter:grayscale(100%);
-    display:flex
-}
-.col-8 img:hover{
-    filter: grayscale(100%);
-}*/
+
 .icon {
     width: 45px;
-    height: 45px
+    height: 45px;
+    padding-right: 12px;
 }
 
 .img-icon {
@@ -155,51 +111,33 @@ h3 {
     display: inline-flex;
     flex-wrap: nowrap;
 }
+
 @font-face {
     font-family: AthitiFont;
-    src:url("../fonts/Athiti-Regular.ttf")
+    src: url("../fonts/Athiti-Regular.ttf");
 }
-
 
 /*CSS của Thư*/
 :root {
-    --primary: #66B032;
-    --white: #FFFFFF;
-    --black: #000000
+    --primary: #66b032;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.col-4 {
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    height: 300px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-
-    .col-4 img {
-        width: 100%;
-    }
 
 .title {
     text-align: center;
-    margin: 0 auto 80px;
+    font-size: 36px;
     position: relative;
     line-height: 60px;
-    color: #555;
+    color: #4F693D;
+    font-weight: 700;
 }
 
     .title::after {
-        content: '';
-        background: #B8E866;
+        content: "";
+        background: #b8e866;
         height: 5px;
         width: 100px;
         border-radius: 5px;
@@ -210,7 +148,7 @@ h3 {
     }
 
 h2 {
-    color: #4F693D;
+    color: #4f693d;
     font-weight: bold;
     font-family: AthitiFont;
     font-size: 36px;
@@ -218,7 +156,7 @@ h2 {
     font-weight: 700;
     line-height: 15px;
     letter-spacing: 0.02em;
-    text-align:center;
+    text-align: center;
 }
 
 h4 {
@@ -226,41 +164,45 @@ h4 {
     font-weight: bold;
 }
 
-.col-4 p {
-    font-size: 14px;
-    color: #66B032;
-    font-weight: bold;
-}
-
-.col-4:hover {
+.transform > .col-4:hover {
     transform: translateY(-5px);
 }
 
+.transform > .col-4 {
+    transition: 0.5s;
+}
+
+.transform > .col-6:hover {
+    transform: translateY(-5px);
+}
+
+.transform > .col-6 {
+    transition: 0.5s;
+}
+
+.transform-col:hover {
+    transform: translateY(-5px);
+}
+
+.transform-col {
+    transition: 0.5s;
+}
+
+.transform > .col-3:hover {
+    transform: translateY(-5px);
+}
+
+.transform > .col-3 {
+    transition: 0.5s;
+}
+
 .rating .fa {
-    color: #DFB300;
+    color: #dfb300;
 }
 
 .categories {
     margin: 70px 0;
 }
-
-.col-3 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-    transition: transform 0.5s;
-    height: 300px;
-    width: 400px;
-}
-
-    .col-3 img {
-        width: 70%;
-    }
-
-    .col-3:hover {
-        transform: translateY(-5px);
-    }
-
 
 /*all product range*/
 .row-2 {
@@ -269,13 +211,13 @@ h4 {
 }
 
 select {
-    border: 1px solid #66B032;
+    border: 1px solid #66b032;
     padding: 3px;
 }
 
     select:focus {
         border: 1px;
-        outline-color: #66B032;
+        outline-color: #66b032;
     }
 
 /*---cart items---*/
@@ -297,7 +239,7 @@ th {
     text-align: left;
     padding: 5px;
     color: #fff;
-    background: #66B032;
+    background: #66b032;
     font-weight: normal;
 }
 
@@ -312,7 +254,7 @@ td {
     }
 
     td a {
-        color: #66B032;
+        color: #66b032;
         font-size: 12px;
     }
 
@@ -328,7 +270,7 @@ td {
 }
 
     .total-price table {
-        border-top: 3px solid #66B032;
+        border-top: 3px solid #66b032;
         width: 100%;
         max-width: 400px;
     }
@@ -343,7 +285,7 @@ th:last-child {
 /*-----------account page------------*/
 .account-page {
     padding: 50px 0;
-    background: radial-gradient(#fff,#F0F7D4);
+    background: radial-gradient(#fff, #f0f7d4);
 }
 
 .form-containner {
@@ -354,7 +296,7 @@ th:last-child {
     text-align: center;
     padding: 20px 0;
     margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -418,4 +360,25 @@ form a {
     margin-top: 8px;
     transform: translateX(100px);
     transition: transform 1s;
+}
+
+.title-home {
+    color: #4F693D;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.btn-buy {
+    background-color: #66B032;
+    border-radius: 40px !important;
+    padding: 12px 35px !important;
+}
+
+.cate-hot-bg {
+    background-color: #F0F7D4;
+    border-radius: 10px;
+}
+
+.color-primary {
+    color: #66B032 !important;
 }
