@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\header.css" />
+    <Content Include="data.js" />
     <Content Include="header.html" />
     <Content Include="Images\svg\40\email.svg" />
     <Content Include="Images\svg\40\faceBook.svg" />
