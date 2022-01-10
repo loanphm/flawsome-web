@@ -1,104 +1,33 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
-    <link href="CSS/StyleChiTietSP.css" rel="stylesheet" type="text/css" />
+    <title>Chi tiết Sản phẩm</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+          type='text/css'>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <div class="small-container single-product">
-        <div class="row">
-            <div class="col-2"> 
-                <div class="large-image">
-                    <img src="Images/TrangChiTietSP/hình lớn.png" alt="" width="500" id="product-img">
-                </div>
-                      
-                <div class="small-img-row">
-
-                    <div class="product-thumb">
-
-                        <div class="nav-item" role="presentation">
-                            <button class="nav-link active" data-toggle="tab" data-target="" type="button">
-                                <span class="thumb">
-                                    <img src="Images/TrangChiTietSP/hình nhỏ 1.png" />
-                                </span>
-
-                            </button>
-                        </div>
-                        <div class="nav-item" role="presentation">
-                            <button class="nav-link" data-toggle="tab" data-target="" type="button">
-                                <span class="thumb">
-                                    <img src="Images/TrangChiTietSP/hình nhỏ 2.png" />
-                                </span>
-
-                            </button>
-                        </div>
-                        <div class="nav-item" role="presentation">
-                            <button class="nav-link" data-toggle="tab" data-target="" type="button">
-                                <span class="thumb">
-                                    <img src="Images/TrangChiTietSP/hình nhỏ 3.png" />
-                                </span>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-
-                <h1>SỮA RỬA MẶT TRÀ XANH INNISFREE</h1>
-                <hr/>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <table>
-                    <tr>
-                        <td><b>Giá cũ:</b></td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="old-price">480,000đ</td>
-                    </tr>         
-                    <tr>
-                        <td><b>Giá mới:</b></td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="new-price">450,000đ</td>
-                    </tr>
-                </table>
-                <p><img class="btn" style=" width: 20px; height: 20px" src="Images/TrangChiTietSP/minus.png" /><input type="number" value="1" /><img class="btn"  style=" width: 20px; height: 20px" src="Images/TrangChiTietSP/plus.png" /></p>
-
-                <h1>Mô tả</h1>
-                <p>
-                    Sữa Rửa Mặt Chiết Xuất Từ Trà Xanh Innisfree Green Tea Foam Cleanser
-                    là sữa rửa mặt trà xanh thuộc thương hiệu Innisfree, thích hợp cho da bị
-                    kích ứng với ô nhiễm môi trường, da có mụn nhưng không quá khẩn cấp (khẩn
-                    cấp và nhiều mụn khuyên dùng bộ Jeju Bija). Có khả năng làm sạch sâu, tái
-                    tạo mới làn da, làm sáng da, chống oxy hóa và ngăn ngừa mụn, viêm hiệu quả.
-                </p>       
-                <div class="intro">
-                    <ul>
-                        <li><b>Loại sản phẩm:</b>&nbsp;Chăm sóc da mặt</li>
-                        <li><b>Phí giao hàng:</b>&nbsp;Free</li>
-                        <li><b>Thương hiệu:</b>&nbsp;Innisfree</li>
-                    </ul>
-                </div>        
-                
-                <table>
-                    <tr>
-                        <td><img style="height:50px;width:50px" src="Images/TrangChiTietSP/cart.png"/></td>
-                        <td width="250px"><a class="btn">MUA NGAY</a></td>
-                    </tr>
-                </table>
-            </div>
+    <div id="header"></div>
+    <div class="container single-product px-8" id="productDetail"></div>
+    <div class="px-8">
+        <div class="pl-8">
+            <p class="color-primary-bold font-bold text-2xl">Sản phẩm liên quan</p>
+            <p class="w-32 p-1 bg-green-primary  rounded-md mt-2"></p>
         </div>
-
+        <div class="container py-8">
+            <div class="row" id='productLQ'></div>
+        </div>
     </div>
+    <div id="foot"></div>
+    <script type="module" src="./link.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
+
 </html>
