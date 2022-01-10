@@ -1,0 +1,29 @@
+﻿.container-footer {
+    min-height: 400px;
+    background-color: #F0F7D4;
+    width: 100%;
+    margin: 0;
+}
+
+.logo-2 {
+    height: 120px !important;
+    width: auto;
+    vertical-align: middle;
+}
+
+.bg-green {
+    background-image: url('../Images/footer/bg.png');
+    /* height: 100%; */
+    width: 100%;
+    background-color: blue;
+}
+
+.title-footer {
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
