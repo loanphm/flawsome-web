@@ -167,6 +167,7 @@
     <Content Include="TrangChiTietBlog.html" />
     <Content Include="TrangChiTietSanPham.html" />
     <Content Include="TrangGioHang.html" />
+    <Content Include="TrangLienHe.html" />
     <Content Include="TrangThanhToanATM.html" />
     <Content Include="CSS\StyleBlog.css" />
     <Content Include="CSS\StyleChiTietSP.css" />
