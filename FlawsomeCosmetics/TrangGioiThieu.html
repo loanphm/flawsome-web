@@ -1,118 +1,130 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html>
+
 <head>
     <title>Giới thiệu</title>
     <link href="CSS/StyleGioiThieu.css" rel="stylesheet" type="text/css" />
-    <style>
-      
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="introduction">
+    <div id="header">
+    </div>
+    <div class="container pt-4">
         <div class="row">
-            <div class="col-2">
-                <div class="text">
-                    <h1>SỨ MỆNH</h1>
-                    <p>
-                        Flawsome được sinh ra để mang lại cho bạn một làn da tươi tắn, một đôi môi đẹp,
-                        trẻ trung và tràn đầy sức sống từ những nguồn nguyên liệu đơn giản và gần gũi
-                        mà bạn ăn hằng ngày. Flawsome luôn giữ một nhiệm vụ trong tâm trí: áp dụng các
-                        lợi ích của thực phẩm quanh ta kết hợp với sự hiểu biết khoa học để tạo ra các
-                        sản phẩm mỹ phẩm an toàn và hiệu quả cho tất cả mọi người. Hành trình gian nan
-                        tìm đến vẻ đẹp thật sự không phải là nhiệm vụ của riêng bạn, Flawsome sẽ cùng
-                        bạn đi trên hành trình đó. Luôn luôn là như vậy, mãi mãi là như vậy.
-                    </p>
+            <div class="col-10 offset-1">
+                <div class="row justify-content-around my-4">
+                    <div class="col-5">
+                        <div class="text">
+                            <h1>SỨ MỆNH</h1>
+                            <p>
+                                Flawsome được sinh ra để mang lại cho bạn một làn da tươi tắn, một đôi môi đẹp,
+                                trẻ trung và tràn đầy sức sống từ những nguồn nguyên liệu đơn giản và gần gũi
+                                mà bạn ăn hằng ngày. Flawsome luôn giữ một nhiệm vụ trong tâm trí: áp dụng các
+                                lợi ích của thực phẩm quanh ta kết hợp với sự hiểu biết khoa học để tạo ra các
+                                sản phẩm mỹ phẩm an toàn và hiệu quả cho tất cả mọi người. Hành trình gian nan
+                                tìm đến vẻ đẹp thật sự không phải là nhiệm vụ của riêng bạn, Flawsome sẽ cùng
+                                bạn đi trên hành trình đó. Luôn luôn là như vậy, mãi mãi là như vậy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="image">
+                            <img src="Images/TrangGioiThieu/sứ mệnh.png">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-2">
-                <div class="image">
-                    <img src="Images/TrangGioiThieu/sứ mệnh.png">
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-2">
-                <div class="image">
-                    <img src="Images/TrangGioiThieu/mục tiêu.png">
+                <div class="row my-4 justify-content-around">
+                    <div class="col-5">
+                        <div class="image">
+                            <img src="Images/TrangGioiThieu/mục tiêu.png">
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="text">
+                            <h1>MỤC TIÊU</h1>
+                            <p>
+                                Flawsome mong muốn có thể gửi gắm đến bạn các sản phẩm chăm sóc da hoàn toàn
+                                có nguồn gốc từ thiên nhiên để giúp bạn không chỉ có làn da đẹp mà còn an toàn
+                                và tốt cho sức khỏe. Flawsome yêu thiên nhiên và luôn say đắm trong việc khám
+                                phá và sưu tập các sản phẩm chăm sóc da được làm từ các nguyên liệu quen thuộc
+                                trong đời sống hằng ngày từ rau củ, trái cây, để khi chúng được đưa vào trong
+                                các sản phẩm skincare mà các chất dinh dưỡng của chúng được giữ lại một cách
+                                nguyên vẹn và hoàn hảo. Những thực phẩm này rất giàu vitamin, chất chống oxi
+                                hóa và các khoáng chất để tăng cường sức khỏe của làn da. Còn gì tuyệt vời hơn
+                                là đưa chúng lên làn da của bạn một cách trọn vẹn nhất có thể.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-2">
-                <div class="text">
-                    <h1>MỤC TIÊU</h1>
-                    <p>
-                        Flawsome mong muốn có thể gửi gắm đến bạn các sản phẩm chăm sóc da hoàn toàn
-                        có nguồn gốc từ thiên nhiên để giúp bạn không chỉ có làn da đẹp mà còn an toàn
-                        và tốt cho sức khỏe. Flawsome yêu thiên nhiên và luôn say đắm trong việc khám
-                        phá và sưu tập các sản phẩm chăm sóc da được làm từ các nguyên liệu quen thuộc
-                        trong đời sống hằng ngày từ rau củ, trái cây, để khi chúng được đưa vào trong
-                        các sản phẩm skincare mà các chất dinh dưỡng của chúng được giữ lại một cách
-                        nguyên vẹn và hoàn hảo. Những thực phẩm này rất giàu vitamin, chất chống oxi
-                        hóa và các khoáng chất để tăng cường sức khỏe của làn da. Còn gì tuyệt vời hơn
-                        là đưa chúng lên làn da của bạn một cách trọn vẹn nhất có thể.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-2">
-                <div class="text">
-                    <h1>NGUYÊN LIỆU</h1>
-                    <p>
-                        Flawsome hiểu giá trị mà các sản phẩm skincare có nguồn gốc thiên nhiên có thể
-                        mang lại cho làn da của bạn. Vì thế Flawsome rất chăm chút trong khâu tuyển
-                        chọn sản phẩm skincare từ các thương hiệu uy tín và sản xuất sản phẩm chăm sóc da
-                        100% bằng các nguyên liệu tự nhiên.<br />
-                        Các nguyên liệu tự nhiên được tinh chế từ tài nguyên khoáng sản và các thành phần
-                        có nguồn gốc thực vật hoặc động vật. Nhằm bảo toàn các giá trị dinh dưỡng, vitamin
-                        và hàm chất có lợi có trong nguyên liệu các thương hiệu phải đáp ứng tiêu chuẩn
-                        sử dụng quy trình lấy nguyên liệu tự nhiên bằng cách sử dụng các phương pháp vật lý
-                        (lọc, chiết xuất, làm khô, chưng cất, ép, xay, đông khô và sàng lọc) , xử lý nguyên
-                        liệu ở mức độ nhỏ.
-                    </p>
+                <div class="row my-4 justify-content-around">
+                    <div class="col-5 ">
+                        <div class="text">
+                            <h1>NGUYÊN LIỆU</h1>
+                            <p>
+                                Flawsome hiểu giá trị mà các sản phẩm skincare có nguồn gốc thiên nhiên có thể
+                                mang lại cho làn da của bạn. Vì thế Flawsome rất chăm chút trong khâu tuyển
+                                chọn sản phẩm skincare từ các thương hiệu uy tín và sản xuất sản phẩm chăm sóc da
+                                100% bằng các nguyên liệu tự nhiên.<br />
+                                Các nguyên liệu tự nhiên được tinh chế từ tài nguyên khoáng sản và các thành phần
+                                có nguồn gốc thực vật hoặc động vật. Nhằm bảo toàn các giá trị dinh dưỡng, vitamin
+                                và hàm chất có lợi có trong nguyên liệu các thương hiệu phải đáp ứng tiêu chuẩn
+                                sử dụng quy trình lấy nguyên liệu tự nhiên bằng cách sử dụng các phương pháp vật lý
+                                (lọc, chiết xuất, làm khô, chưng cất, ép, xay, đông khô và sàng lọc) , xử lý nguyên
+                                liệu ở mức độ nhỏ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="image">
+                            <img src="Images/TrangGioiThieu/nguyên liệu.png">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="image">
-                    <img src="Images/TrangGioiThieu/nguyên liệu.png">
+
+            <div class=" member mt-6">
+                <h1 class="mt-4">GIỚI THIỆU THÀNH VIÊN</h1>
+                <div class="info">
+                    <div class="small-img-row">
+                        <div class="info-member">
+                            <div>
+                                <img src="Images/TrangGioiThieu/Ngọc Anh.png" />
+                                <h3>Hà Thị Ngọc Anh</h3>
+                                <h3>K194111596</h3>
+                            </div>
+
+                            <div>
+                                <img src="Images/TrangGioiThieu/Minh Thư.png" />
+                                <h3>Nguyễn Phan Minh Thư</h3>
+                                <h3>K194111631</h3>
+                            </div>
+
+                            <div>
+                                <img src="Images/TrangGioiThieu/Nhật Loan.png" />
+                                <h3>Phạm Nhật Loan</h3>
+                                <h3>K194111612</h3>
+                            </div>
+
+                            <div>
+                                <img src="Images/TrangGioiThieu/Minh Thuý.png" />
+                                <h3>Hoàng Thị Minh Thúy</h3>
+                                <h3>K194111630</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="member">
-        <h1>GIỚI THIỆU THÀNH VIÊN</h1>
-        <div class="info">
-            <div class="small-img-row">
-                <div class="info-member">
-                    <div>
-                        <img src="Images/TrangGioiThieu/Ngọc Anh.png" />
-                        <h3>Hà Thị Ngọc Anh</h3>
-                        <h3>K194111596</h3>
-                    </div>
-
-                    <div>
-                        <img src="Images/TrangGioiThieu/Minh Thư.png" />
-                        <h3>Nguyễn Phan Minh Thư</h3>
-                        <h3>K194111631</h3>
-                    </div>
-
-                    <div>
-                        <img src="Images/TrangGioiThieu/Nhật Loan.png" />
-                        <h3>Phạm Nhật Loan</h3>
-                        <h3>K194111612</h3>
-                    </div>
-
-                    <div>
-                        <img src="Images/TrangGioiThieu/Minh Thuý.png" />
-                        <h3>Hoàng Thị Minh Thúy</h3>
-                        <h3>K194111630</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   
+    <div id="foot"></div>
+    <script type="module" src="./index.js"></script>
 </body>
+
 </html>

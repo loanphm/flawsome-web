@@ -168,7 +168,7 @@
     <Content Include="TrangChiTietSanPham.html" />
     <Content Include="TrangGioHang.html" />
     <Content Include="TrangLienHe.html" />
-    <Content Include="TrangThanhToanATM.html" />
+    <Content Include="TrangPTTT.html" />
     <Content Include="CSS\StyleBlog.css" />
     <Content Include="CSS\StyleChiTietSP.css" />
     <Content Include="CSS\StyleThanhToan.css" />
@@ -232,7 +232,7 @@
     <Content Include="Images\blog\đá tro núi lửa.png" />
     <Content Include="TrangSanPham.html" />
     <Content Include="TrangGioiThieu.html" />
-    <Content Include="TrangThanhToan.html" />
+    <Content Include="TrangThanhToanATM1.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

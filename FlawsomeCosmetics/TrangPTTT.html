@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin giao hàng</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="row px-8 py-4">
+            <div class="col-7 px-4">
+                <div class="flex justify-content-between mb-8" style="width: 90%;">
+                    <p class="color-primary-bold font-bold text-lg hover:underline no-underline">
+                        <a class="color-primary-bold" href="TrangGioHang.html">Giỏ hàng</a>
+                    </p>
+                    <p class="color-primary-bold font-bold text-lg hover:underline no-underline">
+                        <a class="color-primary-bold" href="ThongTinGiaoHang.html">Thông tin giao hàng</a>
+                    </p>
+                    <div>
+                        <p class="color-primary-bold font-bold text-lg">Phương thức thanh toán</p>
+                        <p class="pt-1 rounded-md" style="background-color: #B8E866;"></p>
+                    </div>
+                </div>
+
+                <div class="input-info">
+                    <input checked type="radio" value="1" class="payMethod" name="pay" id="PaymentForm1">
+                    <label class="pl-4" for="PaymentForm1">Thanh toán khi giao hàng (COD)</label>
+                </div>
+                <div class="input-info">
+                    <input type="radio" value="2" name="pay" class="payMethod" id="PaymentForm2">
+                    <label class="pl-4" for="PaymentForm2">Thanh toán bằng thẻ ATM</label>
+                </div>
+                <div class="input-info">
+                    <input type="radio" value="3" name="pay" class="payMethod" id="PaymentForm3">
+                    <label class="pl-4" for="PaymentForm3">Thanh toán bằng Credit Card</label>
+                </div>
+                <div class="flex justify-content-end" style="width: 90%;">
+                    <div class="button-custom" id="confirm">
+                        <a class="text-white" href="#">Xác nhận</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5 p-4 border border-zinc-700 rounded" style="background-color: #F0F7D4;">
+                <p class="color-primary-bold font-bold text-lg">Đơn hàng</p>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <div id="cart" class="py-4">
+
+                </div>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <p class=" py-2 color-primary font-bold text-xl hover:underline">
+                    Áp dụng mã giảm giá <label for="">></label>
+                </p>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <div class="flex justify-content-between py-2">
+                    <p class="">Tạm tính: </p>
+                    <p id="money"></p>
+                </div>
+                <div class="flex justify-content-between py-2">
+                    <p class="">Phí vẫn chuyển: </p>
+                    <p class="">20,000đ</p>
+                </div>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <div class="flex justify-content-between py-2">
+                    <p class="font-bold">Thành tiền: </p>
+                    <p id="total">20,000đ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="foot"></div>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./payment.js"></script>
+</body>
+
+</html>
