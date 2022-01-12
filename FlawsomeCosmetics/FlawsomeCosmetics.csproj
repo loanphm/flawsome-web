@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="footer\footer.css" />
     <Content Include="footer\footer.html" />
+    <Content Include="Giohang.js" />
     <Content Include="header\header.css" />
     <Content Include="header\header.html" />
     <Content Include="Images\allProducts\01.png" />
