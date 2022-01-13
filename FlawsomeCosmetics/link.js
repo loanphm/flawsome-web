@@ -1,9 +1,46 @@
 ﻿import { products } from './sampleData/product.js';
+import { numberWithCommas } from './number.js';
 const url = new URL(window.location.href);
 const id = url.searchParams.get("id");
 
 const product = products.find(p => p.id === Number(id));
-console.log(product);
+
+
+window.plusQuantity = function () {
+    const quantity = $('#quantity')[0];
+
+    $('#quantity').val(Number(quantity.value) + 1);
+}
+
+window.minusQuantity = function () {
+    const quantity = $('#quantity')[0];
+    if (quantity.value > 1) {
+        $('#quantity').val(Number(quantity.value) - 1);
+    }
+
+}
+
+window.addToCart = function (id) {
+    const quantity = Number($('#quantity')[0].value);
+
+    const item = products.find(p => p.id === Number(id));
+
+    let oldCart = JSON.parse(window.localStorage.getItem('cart'));
+    if (oldCart === null) {
+        oldCart = {};
+    }
+
+    if (oldCart[id]) {
+        oldCart[id].number = quantity + Number(oldCart[id].number);
+    } else {
+        oldCart[id] = { ...item, number: quantity };
+    }
+
+    localStorage.setItem('cart', JSON.stringify(oldCart));
+    alert('Thêm sản phẩm vào giỏ hàng thành công!');
+    window.location.reload();
+
+}
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -65,9 +102,15 @@ window.addEventListener('DOMContentLoaded', () => {
                         <p class="font-bold">Giá mới: <label class="new-price pl-4" for="">${product.price}đ</label></p>
                     </div>
                     <div class="my-2 flex quantity-btn">
-                        <div class="btn-item">-</div>
-                        <input type="number" name="quantity" min="1" value="1" style="background-color: #F0F7D4;">
-                        <div class="btn-item">+</div>
+                        <div class="btn-item cursor-pointer" id="button-minus" onclick="minusQuantity()">-</div>
+                        <input type="number" 
+                            name="quantity" 
+                            min="1" 
+                            id="quantity" 
+                            value="1" 
+                            style="background-color: #F0F7D4;"
+                            >
+                        <div class="btn-item cursor-pointer" id="button-plus" onclick="plusQuantity()">+</div>
                     </div>
 
                     <h1 class="color-primary-bold text-2xl font-bold py-2 ">Mô tả</h1>
@@ -94,14 +137,48 @@ window.addEventListener('DOMContentLoaded', () => {
                     </div>
 
                     <div class="flex items-center">
-                        <img style="height:50px;width:50px" src="Images/svg/cartW.svg" />
+                        <img style="height:50px;width:50px" src="Images/svg/cartW.svg" onclick="addToCart(${product.id})" />
                         <div class="button-custom ml-8">MUA NGAY</div>
                     </div>
                 </div>
             </div>
         </div>`;
 
+    //SP liên quan
+    let listSPLQ = products.filter(p => p.brand == product.brand || p.idCategory == product.idCategory && p.id != product.id);
+    if (listSPLQ.length > 4) {
+        listSPLQ = listSPLQ.slice(0, 4);
+    }
+
+    const SPlienQuan = listSPLQ.map((item, index) => {
+        let star = '';
+        for (let index = 0; index < 5; index++) {
+            if (index <= item.vote) {
+                star += `<i class="fa fa-star"></i> `;
+            } else {
+                star += `<i class="fa fa-star-o" aria-hidden="true"></i> `;
+            }
+        }
+        return `<div class="col-3 relative" >
+                    <a href="TrangChiTietSanPham.html?id=${item.id}">
+                        <img src='${item.image}' />
+                        <h4 class="py-2">
+                            ${item.name}
+                        </h4>
+                    </a>
+                    <div>
+                        <div class="py-2">${star}</div>
+                        <p class="py-1">${numberWithCommas(item.price)}đ</p>
+                    </div>
+                    <img src='Images/svg/50/cart.svg' class="pr-2 cart-icon absolute top-28 right-2" />
+                    <img src='Images/svg/50/zoom.svg' class="pr-2 cart-icon absolute top-10 right-2" />
+                </div>`;
+    }).join(" ");
+
 
     $("#productDetail").html(sanPhamchiTiet);
+    $("#productLQ").html(SPlienQuan);
 
-})
+});
+
+

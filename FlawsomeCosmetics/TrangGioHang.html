@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container px-8 py-8 ">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <p class="pb-8">TRANG CHỦ/ <b>GIỎ HÀNG</b></p>
+                <div class="row rounded text-white text-bold "
+                     style="background-color: #66B032; height: 50px; line-height: 50px;">
+                    <div class="col-6 pl-20 ">Sản phẩm</div>
+                    <div class="col-3 text-center">Số lượng</div>
+                    <div class="col-3 text-right pr-8">Thành tiền</div>
+                </div>
+
+                <div id="listCart">
+
+                </div>
+
+                <div class="row">
+                    <div class="col-6 pl-20 "></div>
+                    <div class="col-6">
+                        <div class="w-full" style="background-color: #66B032;height: 2px;"></div>
+                        <div class="flex justify-content-between pt-4">
+                            <p class="font-bold text-xl">Tổng cộng</p>
+                            <p class="text-xl pr-4" id="total"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 pl-20 "></div>
+                    <div class="col-6">
+                        <div class="flex justify-content-end pt-8">
+                            <div class="button-custom">
+                                <a class="text-white" href="ThongTinGiaoHang.html">Thanh toán</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./gioHang.js"></script>
+</body>
+
+</html>

@@ -81,6 +81,7 @@
     <Content Include="CSS\StyleTransfer.css" />
     <Content Include="footer\footer.css" />
     <Content Include="footer\footer.html" />
+    <Content Include="Giohang.js" />
     <Content Include="header\header.css" />
     <Content Include="header\header.html" />
     <Content Include="Images\adminBlog\blog-1.png" />
@@ -257,6 +258,52 @@
     <Content Include="Images\Trang Chủ\banner2.png" />
     <Content Include="Images\Trang Chủ\banner3.png" />
     <Content Include="Images\Trang Chủ\banner4.png" />
+    <Content Include="Images\TrangChiTietSP\cart.png" />
+    <Content Include="index.css" />
+    <Content Include="index.html" />
+    <Content Include="index.js" />
+    <Content Include="link.js" />
+    <Content Include="number.js" />
+    <Content Include="payment.js" />
+    <Content Include="sampleData\cart.js" />
+    <Content Include="sampleData\category.js" />
+    <Content Include="sampleData\data.js" />
+    <Content Include="sampleData\product.js" />
+    <Content Include="sampleData\user.js" />
+    <Content Include="TrangBlog.html" />
+    <Content Include="CSS\StyleThanhToanATM.css" />
+    <Content Include="TrangChiTietBlog.html" />
+    <Content Include="TrangChiTietSanPham.html" />
+    <Content Include="TrangDangKy.html" />
+    <Content Include="TrangGioHang.html" />
+    <Content Include="TrangLienHe.html" />
+    <Content Include="TrangPTTT.html" />
+    <Content Include="CSS\StyleBlog.css" />
+    <Content Include="CSS\StyleChiTietSP.css" />
+    <Content Include="CSS\StyleThanhToan.css" />
+    <Content Include="CSS\StyleGioiThieu.css" />
+    <Content Include="CSS\StyleTrangChu.css" />
+    <Content Include="Images\bank\acbbank.png" />
+    <Content Include="Images\bank\agribank.png" />
+    <Content Include="Images\bank\bidvbank.png" />
+    <Content Include="Images\bank\cbbank.png" />
+    <Content Include="Images\bank\citibank.png" />
+    <Content Include="Images\bank\dongabank.png" />
+    <Content Include="Images\bank\hdbank.png" />
+    <Content Include="Images\bank\hscbbank.png" />
+    <Content Include="Images\bank\mbbank.png" />
+    <Content Include="Images\bank\ncbbank.png" />
+    <Content Include="Images\bank\ocbbank.png" />
+    <Content Include="Images\bank\oceanbank.png" />
+    <Content Include="Images\bank\pgbank.png" />
+    <Content Include="Images\bank\scbbank.png" />
+    <Content Include="Images\bank\shbbank.png" />
+    <Content Include="Images\bank\tpbank.png" />
+    <Content Include="Images\bank\vietcombank.png" />
+    <Content Include="Images\bank\viettinbank.png" />
+    <Content Include="Images\bank\vpbank.png" />
+    <Content Include="Images\blog\chè dưỡng nhan.png" />
+    <Content Include="Images\TrangChiTietSP\hình lớn.png" />
     <Content Include="Images\Trang Chủ\Evolve Organic Beauty Serum.jpg" />
     <Content Include="Images\Trang Chủ\Evolve Organic Beauty.png" />
     <Content Include="Images\Trang Chủ\evolve.jpg" />
@@ -311,7 +358,7 @@
     <Content Include="CSS\StyleTrangChu.css" />
     <Content Include="TrangSanPham.html" />
     <Content Include="TrangGioiThieu.html" />
-    <Content Include="TrangThanhToan.html" />
+    <Content Include="TrangThanhToanATM1.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -328,7 +375,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Admin\headerAdmin\" />
+    <Folder Include="Admin\sidebar\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
