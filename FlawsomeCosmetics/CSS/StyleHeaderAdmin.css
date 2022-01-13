@@ -1,2 +1,107 @@
-﻿body {
-}
+﻿.header-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  
+  .header-dashboard .input-search {
+    border: 1px solid #c4c4c4;
+    width: 520px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .header-dashboard .input-search input {
+    width: 85%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    padding: 0 20px;
+  }
+  
+  .header-dashboard .input-search button {
+    width: 15%;
+    background: #66b032;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .header-dashboard .input-search button .search {
+    margin: 5px 20px;
+  }
+  
+  .header-dashboard .noti {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+  
+  .header-dashboard .noti .notification {
+    width: 23, 65px;
+    height: 22px;
+  }
+  
+  .header-dashboard .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-dashboard .profile .text-profile h5 {
+    font-weight: 700;
+    color: #4f693d;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .header-dashboard .profile .text-profile a {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+  }
+  
+  .header-dashboard .profile .text-profile a:hover {
+    color: #66b032;
+  }
+  
+  .info {
+    box-shadow: 5px 10px 10px rgb(238, 236, 236);
+    background-color: white;
+    padding: 50px;
+    /* display: none; */
+  }
+  
+  .header-dashboard .profile .text-profile a:hover .info {
+    display: block;
+  }
+  
+  .info div {
+    border-bottom: 1px solid black;
+  }
+  
+  .info div h5 {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .info div p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    padding-bottom: 10px;
+  }
+  
+  .info ul li {
+    padding: 10px 0;
+  }
+  
+  .info ul li a {
+    font-weight: 300;
+  }
+  
+  .info ul li a:hover {
+    color: #66b032;
+  }
+  
