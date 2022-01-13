@@ -4,31 +4,15 @@
     box-sizing: border-box;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom:70px;
-}
-
-.col-2 {
-    flex-basis: 40%;
-    min-width: 200px;
-    margin: 0 40px;
-}
-
 .introduction {
-    margin: 80px 30px;
-    
-}
-
-.col-2 img {
-    max-width: 514px
+    margin: 80px auto;
 }
 
 .image {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 16px;
 }
 
 @font-face {
@@ -50,7 +34,7 @@
         font-weight: 700;
         line-height: 15px;
         letter-spacing: 0.02em;
-        text-align:center;
+        text-align: center;
     }
 
     .text p {
@@ -62,16 +46,16 @@
         letter-spacing: 0.02em;
         text-align: justify;
         margin-top: 35px;
-        justify-content:center
+        justify-content: center;
     }
-
 
 /*    Phần member*/
 .member {
     background-color: rgba(79, 105, 61, 1);
-    padding: 40px 20px;
-    margin-bottom:100px;
+    padding: 20px 20px;
+    margin-bottom: 100px;
 }
+
     .member h1 {
         font-family: AthiliFont;
         font-style: normal;
@@ -81,27 +65,33 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: rgba(255, 255, 255, 1);
-        margin-bottom:43px;
+        margin-bottom: 43px;
     }
 
 .small-img-row {
     display: flow;
     justify-content: space-between;
 }
+
 .info {
-    margin:10px 20px;
+    margin: 10px 20px;
 }
+
 .info-member {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
     .info-member img {
         height: 250px;
         width: 250px;
-        margin-bottom: 20px;
+        margin: auto;
     }
+
     .info-member h3 {
         font-family: AthiliFont;
         font-size: 25px;
@@ -111,5 +101,6 @@
         letter-spacing: 0.02em;
         text-align: center;
         color: rgba(255, 255, 255, 1);
-        margin-bottom:20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }

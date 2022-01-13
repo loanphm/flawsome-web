@@ -27,7 +27,7 @@
 }
 
 .color-primary-bold {
-    color: #4F693D;
+    color: #4F693D !important;
 }
 
 .bg-green-primary {

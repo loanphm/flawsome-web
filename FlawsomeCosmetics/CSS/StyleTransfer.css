@@ -1,0 +1,129 @@
+﻿.transfer {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    background: #e5e5e5;
+}
+
+.content-transfer {
+    margin-left: 20%;
+}
+
+.transfer-date {
+    height: 50px;
+    width: 280px;
+    border: solid 1px rgb(211, 211, 211);
+    border-radius: 10px;
+    padding-left: 7px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+    .transfer-date:focus {
+        outline: none;
+    }
+
+.transfer-content {
+    background-color: white;
+    margin: 50px 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.transfer-title {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(201, 201, 201);
+}
+
+.transfer-search-icon {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #66b032;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+}
+
+.transfer-search {
+    height: 40px;
+    width: 610px;
+    border: solid 1px rgb(211, 211, 211);
+    border-bottom-left-radius: none;
+    border-top-left-radius: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 8px;
+}
+
+    .transfer-search:focus {
+        outline: none;
+    }
+
+.transfer-filter {
+    height: 40px;
+    width: 350px;
+    border: solid 1px rgb(211, 211, 211);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: none;
+    border-top-right-radius: none;
+    padding-left: 8px;
+}
+
+    .transfer-filter:focus {
+        outline: none;
+    }
+
+.transfer-filter-icon {
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #66b032;
+    align-items: center;
+    height: 40px;
+    width: 60px;
+}
+
+.table-header {
+    border-bottom: solid 1px #F0F7D4;
+}
+
+.table-row {
+    font-weight: 500;
+    border-bottom: solid 1px rgb(194, 194, 194);
+    color: #000;
+}
+
+.table-header > th {
+    background: none;
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.main-color {
+    color: #66b032;
+}
+
+
+/* bí tên đặt tạm ;v */
+
+.something {
+    border: solid 1px rgb(196, 196, 196);
+    border-radius: 8px;
+    display: none;
+}
+
+.transfer-filter:focus ~ .something {
+    display: block;
+}
+
+.something-item:hover {
+    background: #f0f7d4;
+    color: #66b032;
+}

@@ -1,0 +1,22 @@
+﻿.detail {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+}
+
+.content-detail {
+    margin-left: 20%;
+    min-height: 100vh;
+}
+
+.infomation {
+    border-top: solid 1px #C4C4C4;
+}
+
+.divider-top {
+    border-top: solid 1px #C4C4C4;
+}
+
+.divider-bottom {
+    border-bottom: solid 1px #C4C4C4;
+    width: 100%
+}
