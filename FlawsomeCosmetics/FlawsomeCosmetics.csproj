@@ -351,7 +351,6 @@
     <Content Include="sampleData\user.js" />
     <Content Include="TrangBlog.html" />
     <Content Include="CSS\StyleThanhToanATM.css" />
-    <Content Include="TrangThanhToanATM.html" />
     <Content Include="CSS\StyleBlog.css" />
     <Content Include="TrangChiTietSanPham.html" />
     <Content Include="CSS\StyleChiTietSP.css" />
@@ -360,6 +359,7 @@
     <Content Include="CSS\StyleTrangChu.css" />
     <Content Include="TrangSanPham.html" />
     <Content Include="TrangGioiThieu.html" />
+    <Content Include="TrangThanhToan.html" />
     <Content Include="TrangThanhToanATM1.html" />
     <Content Include="TrangThanhToanATM2.html" />
     <Content Include="TrangThanhToanCreditCard.html" />
