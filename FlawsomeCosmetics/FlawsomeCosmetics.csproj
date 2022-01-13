@@ -161,6 +161,7 @@
     <Content Include="link.js" />
     <Content Include="number.js" />
     <Content Include="payment.js" />
+    <Content Include="sampleData\cart.js" />
     <Content Include="sampleData\category.js" />
     <Content Include="sampleData\data.js" />
     <Content Include="sampleData\product.js" />
