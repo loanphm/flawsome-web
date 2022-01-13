@@ -81,7 +81,7 @@
     <Content Include="CSS\StyleTransfer.css" />
     <Content Include="footer\footer.css" />
     <Content Include="footer\footer.html" />
-    <Content Include="Giohang.js" />
+    <Content Include="gioHang.js" />
     <Content Include="header\header.css" />
     <Content Include="header\header.html" />
     <Content Include="Images\adminBlog\blog-1.png" />
