@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+          type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 p-0" style="background-color: #F0F7D4;">
+    <div id="header" class="fixed">
+    </div>
+
+    <div style="padding-top: 120px; background-color: #F0F7D4;" class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="Images/login/bg.png" alt="">
+            </div>
+            <div class="col-6">
+                <div class="">
+                    <div class="bg-white w-full rounded-md p-4 shadow-lg" style="max-width: 500px;">
+                        <div class="flex justify-content-between items-center px-4">
+                            <div class="flex w-full justify-content-center">
+                                <div>
+                                    <p class="color-primary-bold font-bold py-2">Đăng Nhập</p>
+                                    <p style="background-color: #B8E866;" class="pt-1 m-0  w-full rounded-md"></p>
+                                </div>
+                            </div>
+                            <div class="flex w-full justify-content-center">
+                                <a href="Dangky.html" class="color-primary-bold font-bold">Đăng ký</a>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 px-8 mt-3">
+                            <div class="parent-input flex">
+                                <img src="Images/login/user.svg" alt="">
+                                <input type="text" class="inputLogin" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="parent-input flex mt-4">
+                                <img src="Images/login/password.svg" alt="">
+                                <input type="password" class="inputLogin" placeholder="Mật khẩu">
+                            </div>
+                            <p class="color-primary hover:underline font-bold text-lg pt-2">Quên mật khẩu?</p>
+                            <div class="button-custom mt-3 text-center"> ĐĂNG NHẬP</div>
+                            <p class="text-center py-4 text-gray-500 text-lg">hoặc</p>
+                            <div class="flex py-2 pl-8 shadow-md">
+                                <img src="Images/login/google.svg" alt="" style="width: 30px; height: 30px;">
+                                <p class="pl-4 hover:underline">Đăng nhập bằng Google</p>
+                            </div>
+                            <div class="flex py-4 pl-8 shadow-md">
+                                <img src="Images/login/facebook.svg" alt="" style="width: 30px; height: 30px;">
+                                <p class="pl-4 hover:underline">Đăng nhập bằng Facebook</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+
+
+</body>
+
+</html>
