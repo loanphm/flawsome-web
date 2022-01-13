@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+          type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 p-0" style="background-color: #F0F7D4;">
+    <div id="header" class="fixed">
+    </div>
+
+    <div style="padding-top: 120px; background-color: #F0F7D4;" class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="Images/login/bg.png" alt="">
+            </div>
+            <div class="col-6">
+                <div class="">
+                    <div class="bg-white w-full rounded-md p-4 shadow-lg" style="max-width: 500px;">
+                        <div class="flex justify-content-between items-center px-4">
+
+                            <div class="flex w-full justify-content-center">
+                                <a href="Dangnhap.html" class="color-primary-bold font-bold">Đăng nhập</a>
+                            </div>
+                            <div class="flex w-full justify-content-center">
+                                <div>
+                                    <p class="color-primary-bold font-bold py-2">Đăng ký</p>
+                                    <p style="background-color: #B8E866;" class="pt-1 m-0  w-full rounded-md"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4 px-8 mt-3">
+                            <div class="parent-input flex">
+                                <img src="Images/login/user.svg" alt="">
+                                <input type="text" class="inputLogin" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="parent-input flex mt-4">
+                                <img src="Images/login/email.svg" alt="">
+                                <input type="email" class="inputLogin" placeholder="Email">
+                            </div>
+                            <div class="parent-input flex mt-4">
+                                <img src="Images/login/password.svg" alt="">
+                                <input type="password" class="inputLogin" placeholder="Mật khẩu">
+                            </div>
+                            <div class="parent-input flex my-4">
+                                <img src="Images/login/password.svg" alt="">
+                                <input type="password" class="inputLogin" placeholder="Nhập lại mật khẩu">
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label text-black" for="flexCheckDefault">
+                                    Đồng ý với <a class="color-primary hover:underline" href="#">điều khoản</a> và <a class="color-primary hover:underline" href="#">chính sách</a> của The Flawsome
+                                </label>
+                            </div>
+
+                            <div class="button-custom mt-4 text-center"> ĐĂNG KÝ</div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+
+
+</body>
+
+</html>
