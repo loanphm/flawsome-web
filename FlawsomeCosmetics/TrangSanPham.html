@@ -1,113 +1,203 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <style>
-        .div1 {
-            overflow: auto;
-            display: flex;
-            align-items:center;     
-        }
-
-        .img {
-            float: left;
-            width: 100px;
-            height: 100px;
-
-        }
-        p {
-            display: inline-block;
-        }
-        .new-price {
-            display: inline;
-            color: #66B032;
-            font-weight: 900;
-            font-size: 16px;
-            font-style: normal;
-        }
-        .old-price {
-            display: inline;
-            margin-left: 20px;
-            color: #C4C4C4;
-            text-decoration: line-through;
-            font-weight: 400;
-            font-size: 16px;
-            font-style: normal;
-        }
-    </style>
+    <title>Sản phẩm</title>
+    <link href="CSS/StyleTrangSanPham.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <div class="title">
-        <h3>SẢN PHẨM NỔI BẬT</h3>
-        <hr width="280" color="#C4C4C4" align="left" />
-    </div>
-    <div class="product">
-        <div class="div1">
-            <img class="img" src="Images/TrangSP/kemduongpivoine.png" />
-            <div>
-                <p>
-                    Kem dưỡng ẩm<br />
-                    L'Occitane Pivoine
-                </p>
-                <div>
-                    <p class="new-price">450,000đ</p>
-                    <p class="old-price">480,000đ</p>
+    <div id="header" class="fixed"></div>
+
+    <div class="container" style="padding-top: 160px; padding-bottom: 30px">
+        <div class="row">
+            <div class="col-8 offset-4">
+                <div class=" flex justify-center">
+                    <h1 class="pb-2 pt-8 font-bold" style="font-size: 24px;">Tất cả sản phẩm</h1>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-32 p-1 bg-green-primary rounded-md mt-2"> </div>
+                </div>
+            </div>
+
+        </div>
+        <p class="pl-10">TRANG CHỦ/ SẢN PHẨM/ <b>TẤT CẢ SẢN PHẨM</b></p>
+        <div class="row">
+            <div class="col-4  pl-12 pr-8 pt-8 md:pl-4 sm:pl-4">
+                <p class="font-bold text-2xl">Lọc Sản Phẩm</p>
+                <div class="px-4 py-2">
+                    <div class="py-2">
+                        <p class="font-bold">Loại sản phẩm</p>
+                        <div class="flex my-2">
+                            <input type="text" name="" id="" style="border:solid #C4C4C4 1px" class="px-2"
+                                placeholder="Tìm loại">
+                            <img src="Images/svg/17/search.svg" style="background-color: #66B032;" class="px-2 py-2"
+                                alt="">
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Kem chống nắng
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Kem dưỡng ẩm
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Nước hoa hồng
+                            </label>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <p class="font-bold">Thương hiệu</p>
+                        <div class="flex my-2">
+                            <input type="text" name="" id="" style="border:solid #C4C4C4 1px" class="px-2"
+                                placeholder="Tìm loại">
+                            <img src="Images/svg/17/search.svg" style="background-color: #66B032;" class="px-2 py-2"
+                                alt="">
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Innesfree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Somebymi
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Skin 1004
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="py-2">
+                        <p class="font-bold">Giá sản phẩm</p>
+                        <div class="flex my-2">
+                            <input type="text" name="" id="" style="border:solid #C4C4C4 1px" class="px-2"
+                                placeholder="Tìm loại">
+                            <img src="Images/svg/17/search.svg" style="background-color: #66B032;" class="px-2 py-2"
+                                alt="">
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Giá dưới 100.000đ
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                100.000đ - 200.000đ
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                200.000đ - 300.000đ
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                300.000đ - 400.000đ
+                            </label>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <p class="font-bold">Màu sắc</p>
+                        <div class="flex my-2">
+                            <div class="circle" style="background-color: #61C472; "></div>
+                            <p class="">Xanh</p>
+                        </div>
+                        <div class="flex my-2">
+                            <div class="circle" style="background-color:#E8B400; "></div>
+                            <p class="">Vàng</p>
+                        </div>
+                        <div class="flex my-2">
+                            <div class="circle" style="background-color: #BA1F2C; "></div>
+                            <p class="">Đỏ</p>
+                        </div>
+                        <div class="flex my-2">
+                            <div class="circle" style="background-color: #FBDFE5; "></div>
+                            <p class="">Hồng</p>
+                        </div>
+
+                    </div>
+
+                    <div class="py-2">
+                        <p class="font-bold">SẢN PHẨM NỔI BẬT</p>
+                        <div class="flex my-2 items-center">
+                            <img class="img-small" src="Images/TrangChiTietSP/1.png" alt="">
+                            <div>
+                                <p class="">Sữa rửa mặt Cà Phê Cocoon</p>
+                                <p class="color-primary font-bold">450,000đ</p>
+                            </div>
+                        </div>
+                        <div class="flex my-2 items-center">
+                            <img class="img-small" src="Images/TrangChiTietSP/2.png" alt="">
+                            <div>
+                                <p class="">Sữa rửa mặt Bạc Hà Origins</p>
+                                <p class="color-primary font-bold">450,000đ</p>
+                            </div>
+                        </div>
+                        <div class="flex my-2 items-center">
+                            <img class="img-small" src="Images/TrangChiTietSP/3.png" alt="">
+                            <div>
+                                <p class="">Sữa rửa mặt Ngăn Lão Hóa Origins</p>
+                                <p class="color-primary font-bold">450,000đ</p>
+                            </div>
+                        </div>
+                        <div class="flex my-2 items-center">
+                            <img class="img-small" src="Images/TrangChiTietSP/4.png" alt="">
+                            <div>
+                                <p class="">Sữa rửa mặt Sáng Da Origins</p>
+                                <p class="color-primary font-bold">450,000đ</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 ">
+                <div class="flex py-4">
+                    <p class="text-black font-bold pr-8">Sắp xếp</p>
+                    <select class="border-gray-700 py-1 px-2 rounded-sm ">
+                        <option value="1" selected>Giá giảm dần</option>
+                        <option value="2">Sản phẩm mới nhất</option>
+                        <option value="3">Thứ tự đánh giá nhiều</option>
+                    </select>
+
+                </div>
+                <div class="grid grid-rows-4 grid-flow-col gap-3" id="allProduct">
                 </div>
             </div>
         </div>
-        <hr width="280" color="#C4C4C4" align="left" />
     </div>
 
-    <div class="product">
-        <div class="div1">
-            <img class="img" src="Images/TrangSP/kemduongahado.png"/>
-            <div>
-                <p>
-                    Kem dưỡng AHA
-                </p>
-                <div>
-                    <p class="new-price">420,000đ</p>
-                    <p class="old-price">450,000đ</p>
-                </div>
-            </div>
-        </div>
-        <hr width="280" color="#C4C4C4" align="left" />
-    </div>
+    <div id="foot"></div>
 
-
-    <div class="product">
-        <div class="div1">
-            <img class="img" src="Images/TrangSP/kemduongahadualeo.png" />
-            <div>
-                <p>
-                    Kem dưỡng AHA
-                </p>
-                <div>
-                    <p class="new-price">420,000đ</p>
-                    <p class="old-price">450,000đ</p>
-                </div>
-            </div>
-        </div>
-        <hr width="280" color="#C4C4C4" align="left" />
-
-    </div>
-
-    <div class="product">
-        <div class="div1">
-            <img class="img" src="Images/TrangSP/nuoccanbangshiseido.png" />
-            <div>
-                <p>
-                    Nước cân bằng Shiseido
-                    <br />Ibuki
-                </p>
-                <div>
-                    <p class="new-price">420,000đ</p>
-                    <p class="old-price">450,000đ</p>
-                </div>
-            </div>
-        </div>
-        <hr width="280" color="#C4C4C4" align="left" />
-    </div>
+    <script type="module" src="./index.js"></script>
 </body>
+
 </html>
