@@ -275,6 +275,7 @@
     <Content Include="TrangChiTietBlog.html" />
     <Content Include="TrangChiTietSanPham.html" />
     <Content Include="TrangDangKy.html" />
+    <Content Include="TrangDangNhap.html" />
     <Content Include="TrangGioHang.html" />
     <Content Include="TrangLienHe.html" />
     <Content Include="TrangPTTT.html" />
