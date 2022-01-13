@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin giao hàng</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="row px-8 py-4">
+            <div class="col-7 px-4">
+                <div class="flex justify-content-between mb-8" style="width: 90%;">
+                    <p class="color-primary-bold font-bold text-lg hover:underline no-underline">
+                        <a class="color-primary-bold" href="TrangGioHang.html">Giỏ hàng</a>
+                    </p>
+                    <p class="color-primary-bold font-bold text-lg hover:underline no-underline">
+                        <a class="color-primary-bold" href="ThongTinGiaoHang.html">Thông tin giao hàng</a>
+                    </p>
+                    <div>
+                        <p class="color-primary-bold font-bold text-lg">Phương thức thanh toán</p>
+                        <p class="pt-1 rounded-md" style="background-color: #B8E866;"></p>
+                    </div>
+                </div>
+
+                <div style="width: 90%;" class="border rounded-md">
+
+                    <div style="background-color: #66B032;"
+                         class="text-white rounded-t-md py-3 px-4 text-center font-bold text-lg">
+                        Thanh toán bằng credit card
+                    </div>
+
+                    <div class="flex py-4 px-4 justify-content-between">
+                        <div class="flex items-center justify-content-between ">
+                            <input type="radio" name="card" id="card1" style="width: 40px; height: 30px;">
+                            <label for="card1">
+                                <img src="Images/payment/masterCard.png" alt="" style="width: 170px; height: 100px;">
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-content-between">
+                            <input type="radio" name="card" id="card2" style="width: 40px; height: 30px;">
+                            <label for="card2">
+                                <img src="Images/payment/visa.png" alt="" style="width: 150px; height: 100px;">
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-content-between">
+                            <input type="radio" name="card" id="card3" style="width: 40px; height: 30px;">
+                            <label for="card3">
+                                <img src="Images/payment/payPal.png" alt="" style="width: 150px; height: 100px;">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pl-4">
+                        <div>
+                            <p class="color-primary font-bold">Tên chủ thẻ</p>
+                            <input type="text" placeholder="Tên chủ thẻ" class="input-info">
+                        </div>
+                        <div>
+                            <p class="color-primary  font-bold">Số thẻ</p>
+                            <input type="text" placeholder="Số thẻ" class="input-info">
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <p class="color-primary  font-bold">Ngày hết hạn</p>
+                                <input type="date" placeholder="Ngày hết hạn" class="input-info">
+                            </div>
+                            <div>
+                                <p class="color-primary  font-bold">Mã CVV</p>
+                                <input type="text" placeholder="Mã CVV" class="input-info">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-content-between p-4 items-center" style="width: 90%;">
+
+                        <div class="flex items-center">
+                            <div style="background-color: #66B032; height: 40px; width: 40px;padding:9px;"
+                                 class="rounded mr-4">
+                                <img src="Images/svg/17/arrowL.svg" alt="" style="width: 18px;">
+                            </div>
+                            <a href="TrangPTTT.html"
+                               class="text-lg no-underline hover:underline text-black hover:text-black">
+                                Quay lại trang trước
+                            </a>
+                        </div>
+                        <div class="button-custom">
+                            <a href="TrangPTTT.html"
+                               class=" text-lg no-underline hover:underline text-white hover:text-white">
+                                Thanh
+                                toán
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5 p-4 border border-zinc-700 rounded" style="background-color: #F0F7D4;">
+                <p class="color-primary-bold font-bold text-lg">Đơn hàng</p>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <div id="cart" class="py-4">
+
+                </div>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <p class=" py-2 color-primary font-bold text-xl hover:underline">
+                    Áp dụng mã giảm giá <label for="">></label>
+                </p>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <div class="flex justify-content-between py-2">
+                    <p class="">Tạm tính: </p>
+                    <p id="money"></p>
+                </div>
+                <div class="flex justify-content-between py-2">
+                    <p class="">Phí vẫn chuyển: </p>
+                    <p class="">20,000đ</p>
+                </div>
+                <p class="w-full border mt-2 " style="background-color: #4F693D;"></p>
+                <div class="flex justify-content-between py-2">
+                    <p class="font-bold">Thành tiền: </p>
+                    <p id="total">20,000đ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="foot"></div>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./payment.js"></script>
+</body>
+
+</html>
