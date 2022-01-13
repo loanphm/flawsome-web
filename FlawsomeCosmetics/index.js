@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     <div class="flex justify-content-between ">
                         <div>
                             <div class="rating">${star}</div>
-                            <p>${numberWithCommas(item.price)}đ</p>
+                            <p class="font-bold" style="color: #66B032;">${numberWithCommas(item.price)}đ</p>
                         </div>
                         <img src='Images/svg/50/cart.svg' class="pr-2 cart-icon" onclick="addCart(${item.id
                 })" />
@@ -98,7 +98,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     <div class="flex justify-content-between ">
                         <div>
                             <div class="rating">${star}</div>
-                            <p>${numberWithCommas(item.price)}đ</p>
+                            <p class="font-bold" style="color: #66B032;">${numberWithCommas(item.price)}đ</p>
                         </div>
                         <img src='Images/svg/50/cart.svg' class="pr-2 cart-icon" onclick="addCart(${item.id
                 })" />
@@ -127,7 +127,7 @@ window.addEventListener("DOMContentLoaded", () => {
                                 <div class="flex justify-content-between" >
                                     <div>
                                         <div class="rating">${star}</div>
-                                        <p class="text-black">${numberWithCommas(
+                                        <p class="text-black font-bold" style="color: #66B032;">${numberWithCommas(
                     item.price
                 )}đ</p>
                                     </div>
