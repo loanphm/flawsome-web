@@ -24,26 +24,26 @@ $.ajax({
     },
 });
 
-window.addCart = function (id) {
-    const item = products.find((p) => p.id === Number(id));
+window.addCart = function (id) { 
+    const item = products.find((p) => p.id === Number(id)); 
 
-    let oldCart = JSON.parse(window.localStorage.getItem("cart"));
-    if (oldCart === null) {
-        oldCart = {};
+    let oldCart = JSON.parse(window.localStorage.getItem("cart")); 
+    if (oldCart === null) { 
+        oldCart = {};  
     }
 
-    if (oldCart[id]) {
-        console.log("có", id);
-        oldCart[id].number++;
-    } else {
-        console.log("không", id);
-        oldCart[id] = { ...item, number: 1 };
-    }
+    if (oldCart[id]) { 
+        console.log("có", id); 
+        oldCart[id].number++; 
+    } else { 
+        console.log("không", id); 
+        oldCart[id] = { ...item, number: 1 };  
+    }   
 
-    localStorage.setItem('cart', JSON.stringify(oldCart));
-    alert('Thêm sản phẩm vào giỏ hàng thành công!');
-    window.location.reload();
-}
+    localStorage.setItem('cart', JSON.stringify(oldCart));  
+    alert('Thêm sản phẩm vào giỏ hàng thành công!');  
+    window.location.reload();  
+} 
 
 window.addEventListener("DOMContentLoaded", () => {
     const listSPNoiBat = products.filter((p) => p.idCategory == 2);
