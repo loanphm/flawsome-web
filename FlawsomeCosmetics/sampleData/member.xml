@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<info type="array">
-    <member id="0">
-        <name>Hà Thị Ngọc Anh</name>
+<root>
+    <sinhvien id="0">
+        <hinh>Ngọc Anh.png</hinh>
+        <ten>Hà Thị Ngọc Anh</ten>
         <mssv>K194111596</mssv>
-    </member>
-    <member id="1"> 
-        <name>Nguyễn Phan Minh Thư</name>
-        <mssv>K194111631</mssv>
-    </member>
-    <member id="2"> 
-        <name>Phạm Nhật Loan</name>
+    </sinhvien>
+    <sinhvien id="1"> 
+        <hinh>Minh Thư.png</hinh>
+        <ten>Nguyễn Phan Minh Thư</ten>
+        <ten>K194111631</ten>
+    </sinhvien>
+    <sinhvien id="2"> 
+        <hinh>Nhật Loan.png</hinh>
+        <ten>Phạm Nhật Loan</ten>
         <mssv>K194111612</mssv>
-    </member>
-    <member id="3"> 
-        <name>Hoàng Thị Minh Thúy</name>
+    </sinhvien>
+    <sinhvien id="3"> 
+        <hinh>Minh Thúy.png</hinh>
+        <ten>Hoàng Thị Minh Thúy</ten>
         <mssv>K194111630</mssv>
-    </member>
-</info>
+    </sinhvien>
+</root>
