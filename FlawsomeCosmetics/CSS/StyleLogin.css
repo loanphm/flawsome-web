@@ -1,5 +1,5 @@
 ﻿.inputLogin {
-    height: 40px;
+    height: 40xp;
     background-color: #3f5431;
     width: 100%;
     outline: none;
@@ -7,18 +7,19 @@
     border-radius: 5px;
     padding-left: 16px;
     color: white;
-}
-
-.parent-input {
+  }
+  
+  .parent-input {
     height: 42px;
     width: 100%;
     padding-left: 16px;
     background-color: #3f5431;
     border-radius: 5px;
-}
-
-    .parent-input img {
-        width: 24px;
-        height: 24px;
-        margin-top: 8px;
-    }
+  }
+  .parent-input img {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+  
+  }
+  
