@@ -1,24 +1,22 @@
-﻿.product-item {
+.product-item{
     justify-content: flex-end;
-}
-
+    } 
+    
     .product-item > a > img {
-        height: 200px;
-        vertical-align: middle;
+     height: 200px;
+      vertical-align: middle;
+     
     }
-
     .product-item > a {
         text-decoration: none;
     }
-
-.circle {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: 16px;
-}
-
-.img-small {
-    width: 100px;
-    height: 100px;
-}
+    .circle{
+        border-radius: 50%; 
+        width: 30px; 
+        height: 30px;
+        margin-right: 16px;
+    }
+    .img-small{
+        width: 100px;
+        height: 100px;
+    }

@@ -1,33 +1,83 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <div class=" flex flex-row w-full containerHeader">
-        <img src="Images/header/logo.png" class="logo mt-6" alt="loading...">
-        <div class="flex flex-row justify-between px-6 items-center w-full">
-            <div class="grid grid-cols-5 main-menu justify-start items-center w-4/5">
-                <div class="px-2 text-center"><a class="menuText" href="index.html">Trang chủ</a></div>
-                <div class="px-2 text-center flex flex-row">
-                    <a class="menuText" href="TrangSanPham.html">Sản phẩm</a>
-                    <img class="cursor-pointer pl-2" src="Images/svg/angle-down-solid.svg" alt="" style="height: 20px;">
+﻿<div class=" flex flex-row w-full containerHeader">
+    <img src="Images/header/logo.png" class="logo" alt="loading...">
+    <div class="flex flex-row justify-between px-6 items-center w-full">
+        <div class="grid grid-cols-5 main-menu justify-start items-center w-4/5">
+            <div class="px-2 text-center"><a class="menuText" href="index.html">Trang chủ</a></div>
+            <div class="px-2 text-center">
+                <!-- <a class="menuText" href="TrangSanPham.html">Sản phẩm</a> -->
+                <!-- <a class="menuText" href="TrangSanPham.htmlp">Sản phẩm</a> -->
+                <a class="menuText dropdown-toggle" href="TrangSanPham.html" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                <!-- <img class="cursor-pointer pl-2" src="Images/svg/angle-down-solid.svg" alt="" style="height: 20px;"> -->
+                <div class="dropdown-menu pb-0 mt-3" style="border: none; box-shadow: 0px 0px 40px rgb(29 58 83 / 15%);"
+                    data-bs-popper="none">
+                    <div class="row p-4 g-4" style="font-size: 24px;">
+                        <!-- Dropdown column item -->
+                        <div class="col-xl-6 ">
+                            <h6 class="mb-2">CHĂM SÓC DA</h6>
+                            <ul class="list-unstyled">
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Kem chống nắng</a> </li>
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Sữa rửa mặt</a> </li>
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Serum</a> </li>
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Toner</a> </li>
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Tẩy tế bào chết</a> </li>
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Mặt nạ dưỡng da</a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xl-6 ">
+                            <h6 class="mb-2">CHĂM SÓC MÔI</h6>
+                            <ul class="list-unstyled">
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Son dưỡng</a> </li>
+                                <li> <a class="dropdown-item" href="TrangSanPham.html">Tẩy da chết môi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="px-2 text-center"><a class="menuText" href="TrangBlog.html">Blog</a></div>
-                <div class="px-2 text-center"><a class="menuText" href="TrangGioiThieu.html">Giới thiệu</a></div>
-                <div class="px-2 text-center"><a class="menuText" href="TrangLienHe.html">Liên hệ</a></div>
             </div>
-            <div class="flex flex-row">
-                <a href="TrangGioHang.html">
-                    <img class="p-4 icon-header cursor-pointer" src="Images/svg/gioHang.svg" alt="">
-                </a>
-                <img class="p-4 icon-header cursor-pointer" src="Images/svg/timKiem.svg" alt="">
-                <a href="admin/index.html">
-                    <img class="p-4 icon-header cursor-pointer" src="Images/svg/taiKhoan.svg" alt="">
-                </a>
+            <div class="px-2 text-center"><a class="menuText" href="TrangBlog.html">Blog</a></div>
+            <div class="px-2 text-center"><a class="menuText" href="TrangGioiThieu.html">Giới thiệu</a></div>
+            <div class="px-2 text-center"><a class="menuText" href="TrangLienHe.html">Liên hệ</a></div>
+        </div>
+        <div class="flex flex-row">
+            <a href="TrangGioHang.html" class="position-relative ">
+                <img class="p-4 icon-header cursor-pointer" src="Images/svg/gioHang.svg" alt="">
+                <div style="width: 26px; height: 26px; line-height: 26px;"
+                    class=" text-white text-center rounded-full position-absolute bg-red-500 top-4 right-2"
+                    id="cardNumber">
+                    0
+                </div>
+            </a>
+            <img class="p-4 icon-header cursor-pointer" src="Images/svg/timKiem.svg" alt="">
+            <!-- <a href="admin/index.html">
+                <img class="p-4 icon-header cursor-pointer" src="Images/svg/taiKhoan.svg" alt="">
+            </a> -->
+            <div class="btn-group">
+                <img aria-expanded="false" src="Images/svg/taiKhoan.svg"
+                    class="dropdown-toggle p-4 icon-header cursor-pointer" data-bs-toggle="dropdown" alt="" />
+                <ul class="dropdown-menu">
+                    <div class="w-fit p-4">
+                        <div><a class="text-gray-600 no-underline hover:underline hover:text-gray-600 py-1"
+                                href="admin/index.html">ADMIN</a>
+                        </div>
+                        <div><a class="text-gray-600 no-underline hover:underline hover:text-gray-600 py-1"
+                                href="DangKy.html">Đăng ký</a></div>
+                        <div><a class="text-gray-600 no-underline hover:underline hover:text-gray-600 py-1"
+                                href="Dangnhap.html">Đăng xuất</a></div>
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+<script>
+    let oldCart = JSON.parse(window.localStorage.getItem('cart'));
+    var cardNumber = document.getElementById('cardNumber');
+    if (oldCart !== null && Object.values(oldCart).length > 0) {
+        console.log('62');
+        cardNumber.innerHTML = Object.values(oldCart).length;
+    } else {
+        console.log(oldCart);
+        cardNumber.setAttribute('style', 'display:none')
+    }
+</script> 

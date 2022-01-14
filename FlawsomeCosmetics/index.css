@@ -1,10 +1,25 @@
 ﻿@import url("./header/header.css");
 @import url("./footer/footer.css");
 @import url("CSS/StyleTrangChu.css");
+@import url("CSS/StyleThanhToanATM.css");
+@import url("CSS/StyleThanhToan.css");
+@import url("CSS/StyleBlog.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url("CSS/StyleTrangSanPham.css");
+@import url("CSS/StyleTrangLienHe.css");
+@import url("CSS/StyleChiTietSP.css");
+@import url("CSS/StyleTrangGioHang.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
-
+@import url("CSS/StyleDashboard.css");
+@import url('CSS/StyleHeaderAdmin.css');
+@import url("CSS/StyleSideBar.css");
+@import url("CSS/StyleOrder.css");
+@import url("CSS/StyleTransfer.css");
+@import url("./CSS/StyleDetailTransfer.css");
+@import url("./CSS/StyleDetailOrder.css");
+@import url('CSS/StyleTrangGioHang.css');
+@import url('CSS/StyleLogin.css');
 body {
     font-family: "Montserrat", sans-serif;
 }
