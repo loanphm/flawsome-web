@@ -2,48 +2,47 @@
     padding-top: 25px;
 }
 
-    .menu-1 li {
-        width: 100%;
-        background: #F0F7D4;
-        margin-bottom: 5px;
-        border-radius: 10px;
-    }
+.menu-1 li {
+    width: 100%;
+    background: #F0F7D4;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
 
-        .menu-1 li a {
-            padding: 10px 10px;
-            width: 100%;
-            font-weight: bold;
-            font-size: 20px;
-            color: #4F693D;
-            font-family: 'Montserrat', sans-serif;
-        }
+.menu-1 li a {
+    padding: 10px 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4F693D;
+    font-family: 'Montserrat', sans-serif;
+}
 
-            .menu-1 li a:hover {
-                color: #4F693D;
-            }
+.menu-1 li a:hover {
+    color: #4F693D;
+}
 
-            .menu-1 li a .icon {
-                width: 35px;
-                height: 24px;
-            }
+.menu-1 li a .icon {
+    width: 35px;
+    height: 24px;
+}
 
-            .menu-1 li a .icon1 {
-                width: 15px;
-                height: 5px;
-            }
+.menu-1 li a .icon1 {
+    width: 15px;
+    height: 5px;
+}
 
-        .menu-1 li.active {
-            background: #66B032;
-        }
+.menu-1 li.active {
+    background: #66B032;
+}
+.menu-1 li:hover {
+    background: #66B032;
+}
 
-        .menu-1 li:hover {
-            background: #66B032;
-        }
+.menu-1 li.active a {
+    color: white;
+}
 
-        .menu-1 li.active a {
-            color: white;
-        }
-
-            .menu-1 li.active a .icon {
-                filter: brightness(0) invert(1);
-            }
+.menu-1 li.active a .icon {
+    filter: brightness(0) invert(1);
+}
