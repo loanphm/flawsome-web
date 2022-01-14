@@ -18,9 +18,9 @@
     margin-top: 30px;
 }
 
-    .transfer-date:focus {
-        outline: none;
-    }
+.transfer-date:focus {
+    outline: none;
+}
 
 .transfer-content {
     background-color: white;
@@ -59,9 +59,9 @@
     padding-left: 8px;
 }
 
-    .transfer-search:focus {
-        outline: none;
-    }
+.transfer-search:focus {
+    outline: none;
+}
 
 .transfer-filter {
     height: 40px;
@@ -74,9 +74,9 @@
     padding-left: 8px;
 }
 
-    .transfer-filter:focus {
-        outline: none;
-    }
+.transfer-filter:focus {
+    outline: none;
+}
 
 .transfer-filter-icon {
     display: flex;
@@ -99,7 +99,7 @@
     color: #000;
 }
 
-.table-header > th {
+.table-header>th {
     background: none;
     color: #000;
     font-weight: 700;
@@ -119,7 +119,7 @@
     display: none;
 }
 
-.transfer-filter:focus ~ .something {
+.transfer-filter:focus~.something {
     display: block;
 }
 

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        <div class="detail bg-[#e5e5e5]">
+            <div id="sidebar"></div>
+            <div class="content-detail">
+                <div id="header-dashboard"></div>
+                <div>
+                    <h1 class="mx-[20px] text-3xl font-bold text-black pt-[60px]">
+                        Chi tiết đơn hàng
+                    </h1>
+                    <div class="d-flex justify-content-end mx-[20px] pb-3">
+                        <div class="d-flex bg-[#66B032] px-[20px] py-[10px]">
+                            <img src="../Images/detailOrder/In.svg" alt="" />
+                            <p class="px-2 text-white font-bold">In</p>
+                        </div>
+                    </div>
+                    <div class="
+                order-detail-content
+                border-t-[1px]
+                mx-[20px]
+                border-[#C4C4C4]
+              ">
+                        <div class="flex my-[30px] gap-1">
+                            <div class="col-xl-4 bg-white p-[10px] rounded-[10px]">
+                                <div class="card-order-detail">
+                                    <div class="flex border-b-[1px] border-[#C4C4C4] pb-6">
+                                        <img src="../Images/detailOrder/info-order.svg" alt="" />
+                                        <h5 class="font-bold text-lg px-5">Thông tin đơn hàng</h5>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div class="py-2">
+                                            <p>Mã</p>
+                                            <p>Ngày tạo</p>
+                                            <p>Trạng thái đơn hàng</p>
+                                        </div>
+                                        <div class="py-2">
+                                            <p class="font-bold">#100021</p>
+                                            <p class="font-bold">12/12/2021, 4:43PM</p>
+                                            <div class="flex gap-4">
+                                                <p class="font-bold text-[#66B032]">Hoàn thành</p>
+                                                <img src="../Images/detailOrder/pen.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 bg-white p-[10px] rounded-[10px]">
+                                <div class="card-order-detail">
+                                    <div class="flex border-b-[1px] border-[#C4C4C4] pb-6">
+                                        <img src="../Images/detailOrder/card.svg" alt="" />
+                                        <h5 class="font-bold text-lg px-5">Thanh toán</h5>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div class="py-2">
+                                            <p>Thanh toán bằng Mastercard</p>
+                                            <p class="py-3">Trạng thái thanh toán</p>
+                                        </div>
+                                        <div class="py-2">
+                                            <img src="../Images/detailOrder/payment.svg" alt="" />
+                                            <p class="font-bold text-[#66B032]">Đã thanh toán</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 bg-white p-[10px] rounded-[10px]">
+                                <div class="card-order-detail">
+                                    <div class="flex border-b-[1px] border-[#C4C4C4] pb-6">
+                                        <img src="../Images/detailOrder/shipper.svg" alt="" />
+                                        <h5 class="font-bold text-lg px-5">Giao hàng</h5>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div class="py-2">
+                                            <p>Hình thức giao hàng</p>
+                                            <p class="py-3">Trạng thái giao hàng</p>
+                                        </div>
+                                        <div class="py-2">
+                                            <p class="font-bold">Giao hàng tiết kiệm</p>
+                                            <div class="flex gap-4 py-3">
+                                                <p class="font-bold text-[#66B032]">Đã giao hàng</p>
+                                                <img src="../Images/detailOrder/pen.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[20px] row my-[20px]">
+                        <div class="col-xl-8">
+                            <table class="table-order bg-white">
+                                <thead>
+                                    <tr>
+                                        <th class="rounded-tl-[10px] p-3">Sản phẩm</th>
+                                        <th></th>
+                                        <th>Số lượng</th>
+                                        <th class="rounded-tr-[10px] p-3">Thành tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="../Images/admin/product-1.png " alt=" " />
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <p class="font-bold">Sữa rửa mặt Hoa Trà Innesfree</p>
+                                                <p class="font-bold">Đơn giá: 220.000đ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="border border-[#66B032] p-2 w-1/2">
+                                                <p class="text-black font-bold text-center">1</p>
+                                            </div>
+                                        </td>
+                                        <td class="font-bold px-[10px]">220.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../Images/admin/product-1.png " alt=" " />
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <p class="font-bold">Sữa rửa mặt Hoa Trà Innesfree</p>
+                                                <p class="font-bold">Đơn giá: 220.000đ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="border border-[#66B032] p-2 w-1/2">
+                                                <p class="text-black font-bold text-center">1</p>
+                                            </div>
+                                        </td>
+                                        <td class="font-bold px-[10px]">220.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../Images/admin/product-1.png " alt=" " />
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <p class="font-bold">Sữa rửa mặt Hoa Trà Innesfree</p>
+                                                <p class="font-bold">Đơn giá: 220.000đ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="border border-[#66B032] p-2 w-1/2">
+                                                <p class="text-black font-bold text-center">1</p>
+                                            </div>
+                                        </td>
+                                        <td class="font-bold px-[10px]">220.000đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="
+                    flex
+                    justify-around
+                    py-[60px]
+                    bg-white
+                    border-t-[1px] border-[#66B032]
+                  ">
+                                <div>
+                                    <p class="py-2">Tổng tiền hàng</p>
+                                    <p class="py-2">Phí vận chuyển</p>
+                                    <p class="py-2">Thanh toán khi giao hàng(COD)</p>
+                                    <p class="py-2">Giảm giá</p>
+                                    <p class="font-bold py-2">Tổng tiền</p>
+                                    <p class="py-2">VAT(0%)</p>
+                                    <p class="font-bold py-2">Tổng giá trị đơn hàng</p>
+                                </div>
+                                <div>
+                                    <p class="py-2">700.000đ</p>
+                                    <p class="py-2">0đ</p>
+                                    <p class="py-2">0đ</p>
+                                    <p class="py-2">0đ</p>
+                                    <p class="font-bold py-2">700.000đ</p>
+                                    <p class="py-2">0đ</p>
+                                    <p class="font-bold py-2">700.000đ</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-[20px]">
+                                <button class="bg-[#66B032] text-white p-2">
+                    Xác thực đơn hàng
+                  </button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="bg-white p-2 rounded-[10px]">
+                                <div class="d-flex justify-content-around border-b-[1px] pb-3">
+                                    <img src="../Images/detailOrder/address.svg" alt="" />
+                                    <p class="font-bold">Địa chỉ lấy hàng</p>
+                                    <img src="../Images/detailOrder/pen.svg" alt="" />
+                                </div>
+                                <p class="py-2">
+                                    196, Nguyễn Đình Chiểu, Phường 6, Quận 3, Hồ Chí Minh
+                                </p>
+                            </div>
+                            <div class="bg-white p-2 rounded-[10px] my-5">
+                                <div class="d-flex justify-content-around border-b-[1px] pb-3">
+                                    <img src="../Images/detailOrder/booke.svg" alt="" />
+                                    <p class="font-bold">Ghi chú đơn hàng</p>
+                                    <img src="../Images/detailOrder/pen.svg" alt="" />
+                                </div>
+                                <div class="d-flex justify-content-center py-2">
+                                    <input type="text" style="
+                        border: 1px solid black;
+                        padding: 20px;
+                        width: 100%;
+                        border-style: dotted;
+                      " />
+                                </div>
+                                <button class="bg-[#66B032] text-white p-2">Cập nhật</button>
+                            </div>
+                            <div class="bg-white p-2 rounded-[10px] my-5">
+                                <div class="d-flex justify-content-around border-b-[1px] pb-3">
+                                    <img src="../Images/detailOrder/user.svg" alt="" />
+                                    <p class="font-bold">Thông tin người mua</p>
+                                </div>
+                                <div class="d-flex justify-content-between p-2">
+                                    <div>
+                                        <p>Tên</p>
+                                        <p class="py-2">
+                                            Email
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold py-2">
+                                            Lê Huyền Trân
+                                        </p class="font-bold">
+                                        <p> huyentran@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded-[10px] my-5">
+                                <div class="d-flex justify-content-around border-b-[1px] pb-3">
+                                    <img src="../Images/detailOrder/user.svg" alt="" />
+                                    <p class="font-bold">Thông tin giao hàng</p>
+                                    <img src="../Images/detailOrder/pen.svg" alt="" />
+                                </div>
+                                <div class="d-flex p-2">
+                                    <div class="pr-[20px]">
+                                        <p>Tên</p>
+                                        <p class="">
+                                            Email
+                                        </p>
+                                        <p>Số điện thoại</p>
+                                        <p>Phường/xã</p>
+                                        <p>Quận/huyện</p>
+                                        <p>Thành phố/tỉnh</p>
+                                        <p>Địa chỉ</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold ">
+                                            Lê Huyền Trân
+                                        </p>
+                                        <p class="font-bold"> huyentran@gmail.com</p>
+                                        <p class="font-bold"> 0393503926</p>
+                                        <p class="font-bold"> Tân Thới Hiệp</p>
+                                        <p class="font-bold"> Quận 12</p>
+                                        <p class="font-bold"> Hồ Chí Minh</p>
+                                        <p class="font-bold w-3/5"> số 12, khu phố 3, đường Lê Văn Khương</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./index.js "></script>
+</body>
+
+</html>
