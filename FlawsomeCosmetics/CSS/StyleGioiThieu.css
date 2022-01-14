@@ -2,105 +2,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.introduction {
+  }
+  
+  .introduction {
     margin: 80px auto;
-}
-
-.image {
+  }
+  
+  .image {
     /* flex-basis: 100%; */
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 16px;
-}
-
-@font-face {
+   margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 16px;
+  }
+  
+  @font-face {
     font-family: AthiliFont;
     src: url("../fonts/Athiti-Regular.ttf");
-}
-
-.text {
+  }
+  
+  .text {
     font-size: 20px;
     text-align: justify;
     max-width: 514px;
-}
-
-    .text h1 {
-        color: rgba(79, 105, 61, 1);
-        font-family: AthiliFont;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 0.02em;
-        text-align: center;
-    }
-
-    .text p {
-        font-family: AthiliFont;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-        text-align: justify;
-        margin-top: 35px;
-        justify-content: center;
-    }
-
-/*    Phần member*/
-.member {
+  }
+  
+  .text h1 {
+    color: rgba(79, 105, 61, 1);
+    font-family: AthiliFont;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  
+  .text p {
+    font-family: AthiliFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    margin-top: 35px;
+    justify-content: center;
+  }
+  
+  /*    Phần member*/
+  .member {
     background-color: rgba(79, 105, 61, 1);
     padding: 20px 20px;
     margin-bottom: 100px;
-}
-
-    .member h1 {
-        font-family: AthiliFont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 15px;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: rgba(255, 255, 255, 1);
-        margin-bottom: 43px;
-    }
-
-.small-img-row {
+  }
+  .member h1 {
+    font-family: AthiliFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 43px;
+  }
+  
+  .small-img-row {
     display: flow;
     justify-content: space-between;
-}
-
-.info {
+  }
+  .info {
     margin: 10px 20px;
-}
-
-.info-member {
+  }
+  .info-member {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-    .info-member img {
-        height: 250px;
-        width: 250px;
-        margin: auto;
-    }
-
-    .info-member h3 {
-        font-family: AthiliFont;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: rgba(255, 255, 255, 1);
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
+  }
+  
+  .info-member img {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+  }
+  .info-member h3 {
+    font-family: AthiliFont;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
