@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="products">
+        <div id="sidebar"></div>
+        <div class="products-content bg-[#e5e5e5] min-h-screen" style="margin-left: 20%">
+            <div id="header-dashboard"></div>
+            <div class="d-flex justify-content-end mx-[20px] mt-[50px]">
+                <button class="d-flex p-2 bg-[#66B032] text-white">
+            <img src="../Images/detailOrder/plus.svg" alt="" class="pr-3" />
+            <a href="./addBlog.html">Tạo bài viết </a>
+          </button>
+            </div>
+            <div class="mx-[20px] bg-white p-4 mt-[30px] rounded-[10px]">
+                <h1 class="p-6 text-2xl font-bold border-b-[1px]">Tất cả bài viết</h1>
+                <div class="my-[30px] flex justify-between">
+                    <div class="flex">
+                        <div class="relative">
+                            <input class="transfer-filter" type="text" placeholder="Lọc theo" />
+                            <div class="
+                    absolute
+                    top-[56px]
+                    left-2
+                    bg-white
+                    w-[330px]
+                    something
+                    py-2
+                  ">
+                                <p id="textsomething" class="
+                      pl-28
+                      py-[15px]
+                      font-bold
+                      cursor-pointer
+                      something-item
+                      transition
+                    ">
+                                    Còn hàng
+                                </p>
+                                <p id="textsomething" class="
+                      pl-28
+                      py-[15px]
+                      font-bold
+                      cursor-pointer
+                      something-item
+                      transition
+                    ">
+                                    Hết hàng
+                                </p>
+                            </div>
+                        </div>
+                        <div class="transfer-filter-icon">
+                            <img class="h-6" src="../Images/transfer/filter-icon.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <input type="checkbox" style="width: 20px" />Chọn thao tác
+                        </div>
+                        <div class="select">
+                            <select name="" id="" class="border border-[#C4C4C4] h-[40px] px-2">
+                  <option value=""></option>
+                  <option value="">Xóa những bài viết đã chọn</option>
+                  <option value="">Thêm bài viết vào nhóm bài viết</option>
+                  <option value="">Xóa bài viết từ nhóm bài viết</option>
+                </select>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <tr class="table-header">
+                        <th></th>
+                        <th>Ảnh bài viết</th>
+                        <th>Tiêu đề</th>
+                        <th>Nhóm bài viết</th>
+                        <th>Ngày hiển thị</th>
+                        <th>Người viết</th>
+                        <th></th>
+                    </tr>
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-1.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-2.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-3.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-4.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-5.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-1.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td><input type="checkbox" style="width: 20px" /></td>
+                        <td><img src="../Images/adminBlog/blog-1.png" alt="" /></td>
+                        <td>Mẹo nhỏ cho làn da tươi sáng</td>
+                        <td>Bài viết nổi bật</td>
+                        <td>27/11/2021</td>
+                        <td>
+                            <p class="
+                    text-xs
+                    bg-pink-200
+                    text-pink-600
+                    rounded-xl
+                    w-24
+                    p-1
+                    flex
+                    items-center
+                  ">
+                                Ngọc Anh
+                            </p>
+                        </td>
+                        <td class="action">
+                            <img class="h-10 w-10 mr-0 cursor-pointer" src="../Images/transfer/more-icon.png" alt="" />
+                            <div class="dropdown-content">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Chỉnh sửa</a>
+                                <a href="#">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
