@@ -1,18 +1,17 @@
 ﻿* {
     margin: 0;
     padding: 0;
-}
-
-/*ngôi sao*/
-i {
+  }
+  
+  /*ngôi sao*/
+  i {
     color: #ffca28; /*star*/
-}
-
-.rating {
+  }
+  .rating {
     margin: 20px 0;
-}
-
-.new-price {
+  }
+  
+  .new-price {
     display: inline;
     color: #66b032;
     font-family: Cambria;
@@ -22,9 +21,9 @@ i {
     line-height: 7px;
     letter-spacing: 0.02em;
     text-align: center;
-}
-
-.old-price {
+  }
+  
+  .old-price {
     display: inline;
     color: #c4c4c4;
     text-decoration: line-through;
@@ -35,84 +34,79 @@ i {
     line-height: 7px;
     letter-spacing: 0.02em;
     text-align: center;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: AthiliFont;
     src: url("../fonts/Athiti-Regular.ttf");
-}
-
-.intro img {
+  }
+  .intro img {
     height: 20px;
     width: 20px;
-}
-
-.small-img-row {
+  }
+  .small-img-row {
     display: flow;
     justify-content: space-between;
-}
-
-.small-img-col {
+  }
+  .small-img-col {
     flex-basis: 20%;
     cursor: pointer;
-}
-
-.large-image {
+  }
+  
+  .large-image {
     margin-bottom: 34px;
     text-align: center;
-}
-
-.product-thumb {
+  }
+  
+  .product-thumb {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
-}
-
-    .product-thumb .nav-link {
-        padding: 0;
-    }
-
-.single-product .intro {
+  }
+  
+  .product-thumb .nav-link {
+    padding: 0;
+  }
+  
+  .single-product .intro {
     margin: 20px 25px;
     font-size: 16px;
     font-family: Cambria;
-}
-
-.intro ul {
+  }
+  .intro ul {
     list-style-image: url("../Images/chitietsp/check.png");
-}
-
-.intro > ul > img {
+  }
+  .intro > ul > img {
     width: 5px;
     height: 5px;
-}
-
-.btn-item {
-    background-color: #B8E866;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    font-size: 35px;
-    line-height: 30px;
-    text-align: center;
-    color: white;
-}
-
-.quantity-btn > input {
-    width: 80px;
-    outline: none;
-    padding-left: 16px;
-    font-weight: 600;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+  }
+  
+  .btn-item{
+      background-color: #B8E866;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 35px;
+      line-height: 30px;
+      text-align: center;
+      color: white;
+  }
+  
+  .quantity-btn > input{
+      width: 80px;
+      outline: none;
+      padding-left: 16px;
+      font-weight: 600;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
+  }
+  
+  /* Firefox */
+  input[type=number] {
     -moz-appearance: textfield;
-}
+  }

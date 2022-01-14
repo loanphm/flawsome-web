@@ -6,34 +6,32 @@
     border: solid #66b032 0.5px;
     margin-right: 12px;
     border-radius: 4px;
-}
-
-    .input-custom > img {
-        width: 24px;
-        height: 24px;
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-
-    .input-custom > input {
-        width: 100%;
-        padding-left: 16px;
-        height: 40px;
-        border-left: none;
-        outline: none;
-        border-radius: 4px;
-    }
-
-.button-custom {
-    background-color: #66b032;
+  }
+  
+  .input-custom > img {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .input-custom > input {
+    width: 100%;
+    padding-left: 16px;
     height: 40px;
-    color: white;
-    padding: 0 25px;
-    line-height: 40px;
+    border-left: none;
+    outline: none;
     border-radius: 4px;
-    cursor: pointer;
-}
-
-    .button-custom:hover {
-        background-color: #68d41a;
-    }
+  }
+  .button-custom{
+      background-color:#66b032 ;
+      height: 40px;
+      color: white;
+      padding: 0 25px;
+      line-height: 40px;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .button-custom:hover{
+      background-color:#68d41a ;
+  }
+  
